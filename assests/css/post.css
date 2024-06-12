@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --primary-color: #94d1ee;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#header {
+  padding: 50px 126px 20px 126px;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  font-size: 1.6rem;
+  display: flex;
+  color: #1fc8d1;
+  font-weight: 700;
+}
+
+#logo p {
+  color: #713d7b;
+  font-weight: 700;
+}
+
+.header-nav {
+  padding-top: 20px;
+  border-top: 1px solid #dbeef0;
+}
+
+.header-nav ul li a {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 10px;
+  color: #000;
+}
+
+.btn-dk {
+  position: fixed;
+  right: 137px;
+  padding: 14px 0;
+  font-size: 1rem;
+  color: #000;
+  z-index: 11;
+}
+
+.btn-dn {
+  right: 230px;
+  position: fixed;
+  padding: 14px 0;
+  font-size: 1rem;
+  color: #000;
+  z-index: 11;
+}
+
+.btn-dk:hover {
+  font-weight: 600;
+}
+
+.btn-dn:hover {
+  font-weight: 600;
+}
+
+/* **************************************************** */
+.grid1 {
+  padding-top: 122px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.colunm1-1 a {
+  margin-right: 25px;
+  color: #000;
+  line-height: 38px;
+}
+
+.colunm1-2 {
+  position: relative;
+}
+
+.colunm1-2 input {
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  background-color: #d9d9d9;
+  border-radius: 4px;
+  border: none;
+}
+
+.colunm1-2 input:focus {
+  outline: none;
+  border: none;
+}
+
+.colunm1-2 i {
+  position: absolute;
+  top: 9px;
+  right: 11px;
+  font-size: 20px;
+}
+
+.colunm1-2 i:hover {
+  cursor: pointer;
+}
+
+.colunm2-1 {
+  position: relative;
+  display: flex;
+}
+
+.colunm2-1::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 88px;
+  width: 80%;
+  height: 2px;
+  background-color: #d9d9d9;
+}
+
+.colunm2-1 img {
+  border-radius: 4px;
+  width: 40%;
+  height: auto;
+}
+
+.colunm2-1 h2,
+p {
+  width: 80%;
+  padding: 10px 10px 0;
+  line-height: 32px;
+}
