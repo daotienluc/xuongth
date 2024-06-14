@@ -5,6 +5,6 @@ function btndn() {
 }
 
 AOS.init({
-  duration: 2000, // Thời gian mặc định cho tất cả các hiệu ứng là 2000ms
-  once: true, // Hiệu ứng chỉ chạy một lần khi lướt trang xuống
+  duration: 2000,
+  once: true,
 });
