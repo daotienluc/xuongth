@@ -14,7 +14,7 @@ async function login() {
     const data = await response.json();
 
     if (response.ok) {
-      window.location.href = "./loginsuccess.html";
+      window.location.href = "/loginsuccess.html";
     } else {
       console.error("Đăng nhập không thành công:", data.message);
       alert(data.message);

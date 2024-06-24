@@ -50,7 +50,6 @@ body {
   padding: 10px 20px;
   color: #ffffff;
   background-color: #804080;
-  border-color: #804080;
   border: none;
   border-radius: 2px;
   cursor: pointer;
@@ -79,12 +78,12 @@ body {
 
 .banner-content h1 {
   overflow-y: hidden;
-  font-size: 40px;
+  font-size: 2.2rem;
   font-weight: bold;
 }
 
 .banner-content p {
-  font-size: 18px;
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
@@ -92,16 +91,19 @@ body {
   color: white;
   font-weight: bold;
 }
-
+.title-header {
+  text-align: center;
+}
 .title{
-  width: 820px;
+  width: 660px;
   margin-top: 30px;
+  margin-left: 320px;
   overflow-y: hidden;
   text-align: center;
-  margin-left: 240px;
   font-weight: 700;
+  font-size: 1.5rem;
 }
 .title1{
-  font-size: 30px;
+  font-size: 1rem;
 }
 
