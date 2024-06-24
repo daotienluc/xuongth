@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/assets/font/fontawesome-free-6.5.1-web/css/all.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/blockchain.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Salary</title>
+</head>
+<body>
+<header class="bg-white fixed-top">
+  <div class="container">
+    <div class="row justify-content-end mt-2 mb-2">
+      <div class="col-1">
+        <a class="nav-link btn-dk fs-6" href="#">Đăng kí</a>
+      </div>
+      <div class="col-1">
+        <a class="nav-link btn-dn fs-6" href="#">Đăng nhập</a>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid header-nav">
+        <a class="mt-2" id="logo">
+          Bonus <p>Zone</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tính năng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dịch vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nhiệm vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Thành viên</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giới thiệu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="banner">
+  <img src="/assets/img/luong_1.png" class="d-block w-100" alt="...">
+</main>
+<div class="container mb-2">
+  <h2 class="title mb-4">
+    Phần mềm tính lương theo sản phẩm hỗ trợ tính lương tự động
+  </h2>
+  <h4 class="fw-bold">1. Lương theo sản phẩm là gì?</h4>
+  <p class="title1">Hiểu theo một cách đơn giản, các doanh nghiệp áp dụng quy chế trả lương theo sản
+    phẩm cho nhân viên dựa trên các số lượng sản phẩm đạt chất lượng. Để trả lương theo sản phẩm
+    doanh nghiệp cần liệt kê ra các sản phẩm được sản xuất trong một khoảng thời gian nhất định và
+    xác định đơn giá cụ thể trên mỗi sản phẩm.</p>
+  <img src="/assets/img/luong_2.jpg" class="w-100 mb-5 rounded" height="700">
+</div>
+<div class="container mb-2">
+  <h4 class="fw-bold">2. Cách tính lương theo sản phẩm ra sao?</h4>
+  <p class="title1">Tại các doanh nghiệp, phòng ban nhân sự là nơi nắm toàn bộ trách nhiệm về cách
+    tính lương cho nhân viên. Đối với mỗi hình thức trả lương theo sản phẩm sẽ có công thức tính
+    lương riêng biệt như sau:</p>
+  <p class="title1 ms-5">- Tính lương theo sản phẩm cá nhân: Lương sản phẩm = Tổng số sản phẩm được
+    sản xuất x đơn giá sản phẩm.</p>
+  <p class="title1 ms-5">- Cách tính lương theo sản phẩm cả tập thể: Lương sản phẩm = Tổng số lượng
+    sản phẩm tập thể hoàn thành x đơn giá sản phẩm.</p>
+  <p class="title1 ms-5">- Tính lương theo sản phẩm gián tiếp: Lương theo sản phẩm = Đơn giá sản
+    phẩm phục vụ * tổng số sản phẩm người lao động chính sản xuất.</p>
+  <p class="title1 ms-5">- Tính lương theo sản phẩm có thưởng: Lương theo sản phẩm = Lương sản phẩm
+    + [(% tiền thưởng so với sản phẩm cho 1% hoàn thành vượt mức sản lượng * phần trăm hoàn thành
+    vượt mức sản lượng)/100 * lương sản phẩm]</p>
+  <img src="/assets/img/luong_3.jpg" class="w-100 mb-5 rounded" height="700">
+</div>
+<div class="container mb-2">
+  <h4 class="fw-bold">3. Tự động hóa với phần mềm tính lương theo sản phẩm của Viindoo</h4>
+  <p class="title1">Viindoo Payroll tự động hóa việc xử lý lương cho từng nhân viên, từng phòng ban
+    và toàn bộ doanh nghiệp. Đây là một công cụ hiện đại giúp doanh nghiệp thay thế cách tính lương
+    truyền thống, tiết kiệm thời gian và nguồn lực cho tổ chức bằng cách tự động hóa nhiều công việc
+    quan trọng, điển hình:</p>
+  <p class="title1 ms-5">- Tự động thu thập dữ liệu về lương, phụ cấp lương của tất cả nhân
+    viên.</p>
+  <p class="title1 ms-5">- Hỗ trợ tính lương nhanh chóng và chính xác, giúp quản lý nhân sự tiết
+    kiệm thời gian.</p>
+  <img src="/assets/img/luong_4.jpg" class="w-100 mb-5 rounded" height="700">
+</div>
+<footer class="bg-black">
+  <div class="container">
+    <div class="row mt-5 ms-5">
+      <div class="col-lg-9 col-12">
+        <div class="row">
+          <div class="col-lg-3 col-12">
+            <div class="position-relative">
+              <div class="mb-3 pb-2 d-flex justify-content-between">
+                <h4 class="overflow-y-hidden text-white">Về chúng tôi</h4>
+              </div>
+              <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none text-reset">Giới thiệu
+                      chung</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Tin tức</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Báo chí</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Sự kiện</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Podcast</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div>
+              <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+                <h4 class="overflow-y-hidden text-white">Dịch vụ</h4>
+                <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+                   href="#collapseAccounts" role="button" aria-expanded="false"
+                   aria-controls="collapseAccounts">
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+              </div>
+              <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Chợ ứng dụng -
+                      marketplace</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Tập huấn, chuyển giao
+                      công nghệ</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Tư vấn và Triển
+                      khai</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Tùy biến tính năng theo
+                      yêu cầu</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Nâng cấp Odoo</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+              <h4 class="overflow-y-hidden text-white">Cộng đồng</h4>
+              <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+                 href="#collapseResources" role="button" aria-expanded="false"
+                 aria-controls="collapseResources">
+                <i class="bi bi-chevron-down"></i>
+              </a>
+            </div>
+            <div class="collapse d-lg-block" id="collapseResources" data-bs-parent="#ft-links">
+              <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset">Blogs Quản trị</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset">Khóa học</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset">Chương trình Cộng tác
+                    viên</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset">Chương trình Đối tác</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+              <h4 class="overflow-y-hidden text-white">Tài nguyên</h4>
+              <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+                 href="#collapseLocations" role="button" aria-expanded="false"
+                 aria-controls="collapseLocations">
+                <i class="bi bi-chevron-down"></i>
+              </a>
+            </div>
+            <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+              <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset">Github</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset">Runbot</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset">Tài sản thương hiệu</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset">Chính sách</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-12">
+        <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+          <h4 class="overflow-y-hidden text-white">Trợ giúp</h4>
+          <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+             href="#collapseLocations" role="button" aria-expanded="false"
+             aria-controls="collapseLocations">
+            <i class="bi bi-chevron-down"></i>
+          </a>
+        </div>
+        <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+          <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none text-reset">Diễn đàn</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-decoration-none text-reset">Tài liệu hướng dẫn</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none text-reset">Trợ giúp</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-decoration-none text-reset"> Đặt lịch hẹn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5" style="border-top: 1px solid white;">
+    <div class="row mt-5 ms-5">
+      <div class="col-lg-8 col-12">
+        <div class="row" id="ft-links">
+          <div class="col-lg-4 col-12">
+            <div class="position-relative">
+              <div class="mb-3 pb-2 d-flex justify-content-between">
+                <h4 class="overflow-y-hidden text-white">Liên hệ</h4>
+              </div>
+              <div class="collapse d-lg-block" id="collapseLanding" data-bs-parent="#ft-links">
+                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none text-reset">Hotline: <span>+84 0337
+                                                    092 423</span></a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!"
+                       class="text-decoration-none text-reset">Email:kieukienquocvn@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-md-end d-flex align-items-center">
+                <div class="d-flex gap-2">
+                  <a href="#" class="btn">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#" class="btn">
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                  <a href="#" class="btn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="#" class="btn">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="#" class="btn">
+                    <i class="bi bi-spotify"></i>
+                  </a>
+                  <a href="#" class="btn">
+                    <i class="bi bi-threads"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div>
+              <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+                <h4 class="overflow-y-hidden text-white">Địa chỉ</h4>
+                <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+                   href="#collapseAccounts" role="button" aria-expanded="false"
+                   aria-controls="collapseAccounts">
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+              </div>
+              <div class="collapse d-lg-block" id="collapseAccounts" data-bs-parent="#ft-links">
+                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Trường Cao đẳng FPT
+                      Polytechnic</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+          <h4 class="overflow-y-hidden text-white">Đăng ký kinh doanh</h4>
+          <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+             href="#collapseLocations" role="button" aria-expanded="false"
+             aria-controls="collapseLocations">
+            <i class="bi bi-chevron-down"></i>
+          </a>
+        </div>
+        <div class="collapse d-lg-block" id="collapseLocations" data-bs-parent="#ft-links">
+          <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none text-reset">Mã số Doanh nghiệp: 0000000000</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-decoration-none text-reset">Được cấp phép bởi Sở Kế hoạch và
+                Đầu tư Hải Phòng</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="container mt-7">
+    <div class="row align-items-center">
+      <div class="col-md-3 d-flex ms-5">
+        <a class="mb-4 mb-lg-0 d-block text-inverse" href="#"><img
+            src="/assets/img/logo-da-thong-bao-bo-cong-thuong-mau-xanh.png" width="100px"
+            alt=""></a>
+        <a class="mb-4 mb-lg-0 d-block text-inverse ms-2" href="#"><img
+            src="/assets/img/logo-dmca.png"
+            width="100px" alt=""></a>
+      </div>
+      <div class="col-md-8 col-lg-6">
+        <div class="small mb-3 mb-lg-0 text-lg-center">
+          Copyright belongs to web Technology Joint Stock Company
+        </div>
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- AOS JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script src="/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
