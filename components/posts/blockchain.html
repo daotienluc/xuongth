@@ -1,492 +1,717 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="assests/font/fontawesome-free-6.5.1-web/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/blockchain.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>BlockChain</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assests/font/fontawesome-free-6.5.1-web/css/all.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/css/blockchain.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <title>BlockChain</title>
-</head>
-
-<body>
-<header class="bg-white fixed-top">
-  <div class="container">
-    <div class="row justify-content-end mt-2 mb-2">
-      <div class="col-1">
-        <a class="nav-link btn-dk fs-6" href="#">Đăng kí</a>
-      </div>
-      <div class="col-1">
-        <a class="nav-link btn-dn fs-6" href="#">Đăng nhập</a>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid header-nav">
-        <a class="mt-2" id="logo">
-          Bonus <p>Zone</p>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto ">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tính năng</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Dịch vụ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nhiệm vụ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Thành viên</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Liên hệ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Giới thiệu</a>
-            </li>
-          </ul>
+  <body>
+    <header class="bg-white fixed-top">
+      <div class="container">
+        <div class="row justify-content-end mt-2 mb-2">
+          <div class="col-1">
+            <a class="nav-link btn-dk fs-6" href="#">Đăng kí</a>
+          </div>
+          <div class="col-1">
+            <a class="nav-link btn-dn fs-6" href="#">Đăng nhập</a>
+          </div>
         </div>
-      </div>
-    </nav>
-  </div>
-</header>
-<main class="banner">
-  <img src="/assets/img/nen.jpg" class="d-block w-100" alt="...">
-  <div class="banner-content mb-4 text-dark">
-    <div class="col-md-5 ">
-      <h1 class="">Ứng dụng hỗ trợ quản lý, phân loại, chấm điểm thành viên trong cộng đồng</h1>
-      <button href="#" class="content-btn"> ĐĂNG KÍ NGAY </button>
-      <p> <i class="bi bi-check-lg"></i> Miễn phí trọn đời phần mềm Quản lý Công việc, Dự án </p>
-      <p> <i class="bi bi-check-lg"></i> Không giới hạn số người sử dụng </p>
-    </div>
-  </div>
-</main>
-<div class="container mb-2">
-  <h2 class="title mb-4">
-    Blockchain là gì?Công nghệ này có ảnh hưởng thế nào đến cuộc sống của chúng ta?
-  </h2>
-  <p class="title1">Blockchain là công nghệ được nhắc đến rất nhiều trong 10 năm trở lại đây. Ngoài
-    việc là chìa khóa khai sinh ra các loại tiền kỹ thuật số, Blockchain còn được ứng dụng rất nhiều trong các
-    lĩnh vực khác. Công nghệ này nổi bật với tính bảo mật cao và không thể thay đổi dữ liệu.</p>
-  <img src="/assets/img/blockchain_1.jpg" class="w-100 mb-5 rounded" height="700">
-</div>
-<div class="container mb-2">
-  <p class="title1">Blockchain được biết đến nhiều nhất với vai trò quan trọng trong các hệ thống tiền điện tử để
-    duy trì hồ sơ giao dịch an toàn và phi tập trung. Tuy nhiên, thực tế là công nghệ này không chỉ giới hạn
-    trong lĩnh vực tiền điện tử. Blockchain có thể được sử dụng như “sổ cái” dữ liệu trong bất kỳ ngành nào để
-    ngăn dữ liệu bị thay đổi hoặc gian lận.</p>
-  <p class="title1">Kể từ khi Bitcoin được giới thiệu vào năm 2009, việc sử dụng Blockchain đã bùng nổ thông qua
-    việc tạo ra nhiều loại tiền điện tử, ứng dụng tài chính phi tập trung (DeFi), mã thông báo không thể thay
-    thế (NFT) và hợp đồng thông minh.</p>
-  <p class="title1">Sau khi đã tìm hiểu nhanh Blockchain là gì, chúng ta hãy tiếp tục khám phá xem công nghệ này
-    hoạt động như thế nào nhé.</p>
-</div>
-<div class="container mb-2">
-  <h2 class="title mb-4">
-    Cách thức hoạt động của Blockchain là gì?
-  </h2>
-  <img src="/assets/img/blockchain_2.jpg" class="w-100 mb-5 rounded" height="700">
-</div>
-<div class="container mb-2">
-  <p class="title1">Bạn có thể quen thuộc với bảng tính hoặc cơ sở dữ liệu trong công việc hàng ngày. Thực chất,
-    Blockchain cũng có bản chất tương tự, đây là cơ sở dữ liệu nơi thông tin được nhập và lưu trữ vào. Tuy
-    nhiên, điểm khác biệt chính giữa cơ sở dữ liệu hoặc bảng tính truyền thống với Blockchain là cách dữ liệu
-    được cấu trúc và truy cập.</p>
-  <p class="title1">Về cơ bản, Blockchain hoạt động như một sổ cái kỹ thuật số phân tán, nơi mỗi giao dịch được
-    ghi chép lại một cách minh bạch và không thể thay đổi. Bạn chỉ cần hiểu Blockchain như một chuỗi gồm các
-    khối, trong đó mỗi khối chứa dữ liệu về một giao dịch cụ thể. Khi một giao dịch mới được thực hiện, thông
-    tin sẽ được ghi vào một khối mới và sau đó khối này được liên kết mật mã với khối trước đó, tạo thành một
-    chuỗi liên tục.</p>
-  <p class="title1">Điểm đặc biệt của Blockchain là tính phân quyền và không tập trung. Không có một tổ chức nào
-    quản lý sổ cái này. Thay vào đó, mỗi nút trong mạng lưới Blockchain sẽ giữ một bản sao của sổ cái, đảm bảo
-    tính minh bạch và khó bị tấn công hay gian lận. Mỗi khi một giao dịch mới được thêm vào, nó phải được xác
-    nhận bởi một số lượng lớn các nút trong mạng, qua đó đảm bảo tính chính xác và an toàn của thông tin.</p>
-</div>
-<div class="container mb-2">
-  <h2 class="title mb-4">
-    Có những loại Blockchain nào?
-  </h2>
-  <img src="/assets/img/blockchain_3.jpg" class="w-100 mb-5 rounded" height="700">
-</div>
-<div class="container mb-2">
-  <p class="title1">Blockchain có ba loại chính:</p>
-  <p class="title1 ms-5">- Public Blockchain (Blockchain công khai): Đây là loại blockchain mở, cho phép mọi người
-    đều có thể tham gia, xác minh và thực hiện giao dịch. Ví dụ điển hình của loại Blockchain này là Bitcoin và
-    Ethereum. Trong loại Public Blockchain, mọi giao dịch đều công khai và minh bạch, nhưng không ai có thể kiểm
-    soát hoặc thay đổi dữ liệu đã được ghi vào Blockchain.</p>
-  <p class="title1 ms-5">- Private Blockchain (Blockchain riêng tư): Khác với Public Blockchain, Private
-    Blockchain chỉ cho phép một số người dùng cụ thể tham gia. Loại Blockchain này thường được sử dụng trong các
-    tổ chức hoặc doanh nghiệp để đảm bảo quyền truy cập và quyền thực hiện giao dịch được kiểm soát chặt chẽ.
-    Private Blockchain giúp tăng cường bảo mật và quản lý hiệu quả hơn so với Public Blockchain.</p>
-  <p class="title1 ms-5">- Permissioned Blockchain (Blockchain có quyền hạn): Đây là một dạng của Private
-    Blockchain, nhưng người dùng được cung cấp một số tính năng đặc quyền khác tùy thuộc vào bên thứ ba cung
-    cấp. Permissioned Blockchain thường được sử dụng trong các môi trường doanh nghiệp để đảm bảo sự linh hoạt
-    và kiểm soát cao đối với quyền truy cập và quyền thực hiện giao dịch.</p>
-</div>
-<div class="container mb-2">
-  <h2 class="title mb-4">
-    Có những phiên bản Blockchain nào?
-  </h2>
-  <img src="/assets/img/blockchain_4.jpg" class="w-100 mb-5 rounded" height="700">
-</div>
-<div class="container mb-2">
-  <p class="title1">Blockchain đã phát triển qua nhiều phiên bản với các ứng dụng và tính năng khác nhau:</p>
-  <p class="title1 ms-5">- <span class="fw-bold">Blockchain 1.0:</span> Đây là phiên bản đầu tiên của Blockchain,
-    tập trung vào việc tạo ra và quản lý tiền điện tử như Bitcoin. Mục tiêu chính của phiên bản này là cung cấp
-    một phương thức thanh toán kỹ thuật số an toàn và không cần trung gian.
-  </p>
-  <p class="title1 ms-5">- <span class="fw-bold">Blockchain 2.0:</span> Được phát triển từ Blockchain 1.0, phiên
-    bản này mở rộng ứng dụng của Blockchain vào các hợp đồng thông minh (smart contracts) và các ứng dụng tài
-    chính. Ethereum là ví dụ nổi bật cho Blockchain 2.0, nơi người dùng có thể tạo và thực thi hợp đồng thông
-    minh trên một nền tảng phi tập trung.
-  </p>
-  <p class="title1 ms-5">- <span class="fw-bold">Blockchain 3.0:</span> Phiên bản này mở rộng ứng dụng của
-    Blockchain ra ngoài tài chính, bao gồm y tế, bầu cử, quản lý tài nguyên, logistics và nhiều lĩnh vực khác.
-    Mục tiêu của Blockchain 3.0 là tận dụng tính minh bạch và không tập trung của công nghệ chuỗi khối để cải
-    thiện hiệu quả và an toàn trong công việc.</p>
-</div>
-<div class="container mb-2">
-  <h2 class="title mb-4">
-    Có bao nhiêu loại Blockchain?
-  </h2>
-  <img src="/assets/img/blockchain_5.jpg" class="w-100 mb-5 rounded" height="700">
-</div>
-<div class="container mb-2">
-  <p class="title1">Số lượng Blockchain đang tăng lên mỗi ngày với tốc độ chóng mặt. Tính đến nay có hơn 23.000
-    loại tiền điện tử đang hoạt động dựa trên Blockchain. Đó còn chưa kể có hàng trăm Blockchain không phải tiền
-    điện tử cũng đang hoạt động.</p>
-</div>
-<div class="container mb-2">
-  <h2 class="title mb-4">
-    Đặc điểm nổi bật của Blockchain là gì?
-  </h2>
-  <img src="/assets/img/blockchain_1.jpg" class="w-100 mb-5 rounded" height="700">
-</div>
-<div class="container mb-2">
-  <p class="title1">Blockchain nổi bật với những đặc điểm sau:</p>
-  <p class="title1 ms-5">- <span class="fw-bold">Tính minh bạch và không thể thay đổi:</span> Mỗi giao dịch trên
-    Blockchain đều được ghi chép một cách minh bạch và không thể thay đổi sau khi đã được hệ thống xác nhận, nhờ
-    đó tăng cường tính an toàn và độ tin cậy.
-  </p>
-  <p class="title1 ms-5">- <span class="fw-bold">Phân quyền và phi tập trung:</span> Blockchain hoạt động mà không
-    cần một tổ chức quản lý tập trung. Mỗi nút trong mạng lưới đều giữ một bản sao của sổ cái, giúp đảm bảo tính
-    toàn vẹn và minh bạch của dữ liệu
-  </p>
-  <p class="title1 ms-5">- <span class="fw-bold">Bảo mật cao:</span> Nhờ sử dụng mã hóa tiên tiến và cơ chế xác
-    nhận giao dịch phức tạp, Blockchain đảm bảo rằng dữ liệu không thể bị hack hoặc thay đổi trái phép.</p>
-  <p class="title1 ms-5">- <span class="fw-bold">Tự động hóa qua hợp đồng thông minh:</span> Blockchain cho phép
-    tạo và thực thi các hợp đồng thông minh (smart contracts), tự động hóa các quy trình và giao dịch mà không
-    cần sự can thiệp của con người.</p>
-  <p class="title1">Những đặc điểm này làm cho Blockchain trở thành một công nghệ mang tính cách mạng với khả năng
-    ứng dụng trong nhiều lĩnh vực khác nhau, từ tài chính, y tế đến quản lý chuỗi cung ứng và bảo mật thông tin.
-  </p>
-</div>
-<div class="container mb-2">
-  <h2 class="title mb-4">
-    Ứng dụng của Blockchain là gì?
-  </h2>
-  <img src="/assets/img/blockchain_6.jpg" class="w-100 mb-5 rounded" height="700">
-</div>
-<div class="container mb-2">
-  <p class="title1">Với khả năng bảo mật cao và tính minh bạch tuyệt đối, Blockchain đã được ứng dụng trong nhiều
-    lĩnh vực khác nhau, bao gồm:</p>
-  <p class="title1 ms-5">- <span class="fw-bold">Tiền điện tử:</span> Đây là ứng dụng phổ biến nhất của
-    Blockchain, mà Bitcoin là ví dụ nổi tiếng nhất. Công nghệ này cung cấp một hệ thống thanh toán kỹ thuật số
-    an toàn và không cần trung gian cho người dùng trên toàn thế giới.
-  </p>
-  <p class="title1 ms-5">- <span class="fw-bold">Hợp đồng thông minh:</span> Blockchain cho phép tạo và thực thi
-    các hợp đồng tự động, minh bạch và không thể thay đổi. Vì vậy, công nghệ này đang được ứng dụng nhiều trong
-    các hệ thống tài chính lớn, tổ chức bất động sản và nhiều lĩnh vực khác.
-  </p>
-  <p class="title1 ms-5">- <span class="fw-bold">Quản lý chuỗi cung ứng:</span> Blockchain giúp theo dõi và quản
-    lý chuỗi cung ứng một cách chính xác và minh bạch, từ nguồn gốc sản phẩm đến quá trình phân phối. Một số
-    công ty như Walmart, Pfizer, AIG, Siemens và Unilever cũng đang thử nghiệm Blockchain trong quả lý chuỗi
-    cung ứng của họ trên toàn cầu.</p>
-  <p class="title1 ms-5">- <span class="fw-bold">Bảo mật dữ liệu và bảo vệ quyền riêng tư:</span> Blockchain cũng
-    được ứng dụng trong việc lưu trữ và bảo vệ dữ liệu cá nhân để ngăn chặn gian lận và tăng cường bảo mật thông
-    tin.</p>
-  <p class="title1 ms-5">- <span class="fw-bold">Y tế:</span> Blockchain thậm chí còn có thể được sử dụng để lưu
-    trữ và quản lý hồ sơ y tế, giúp việc chia sẻ thông tin giữa các bên liên quan trở nên an toàn và hiệu quả
-    hơn.</p>
-  <p class="title1">Như bạn có thể thấy, Blockchain không chỉ giới hạn trong lĩnh vực tài chính mà còn mở rộng
-    sang nhiều ngành công nghiệp khác, mang lại một cuộc cách mạng trong cách quản lý và trao đổi thông tin.
-  </p>
-</div>
-<footer class="bg-black">
-  <div class="container">
-    <div class="row mt-5 ms-5">
-      <div class="col-lg-9 col-12">
-        <div class="row" >
-          <div class="col-lg-3 col-12">
-            <div class="position-relative">
-              <div class="mb-3 pb-2 d-flex justify-content-between">
-                <h4 class="overflow-y-hidden text-white">Về chúng tôi</h4>
-              </div>
-              <div class="collapse d-lg-block"  data-bs-parent="#ft-links">
-                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
-                  <li class="mb-2">
-                    <a href="#" class="text-decoration-none text-reset">Giới thiệu
-                      chung</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!" class="text-decoration-none text-reset">Tin tức</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!" class="text-decoration-none text-reset">Báo chí</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!" class="text-decoration-none text-reset">Sự kiện</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!" class="text-decoration-none text-reset">Podcast</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-12">
-            <div>
-              <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
-                <h4 class="overflow-y-hidden text-white">Dịch vụ</h4>
-                <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
-                   href="#collapseAccounts" role="button" aria-expanded="false"
-                   aria-controls="collapseAccounts">
-                  <i class="bi bi-chevron-down"></i>
-                </a>
-              </div>
-              <div class="collapse d-lg-block"  data-bs-parent="#ft-links">
-                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
-                  <li class="mb-2">
-                    <a href="#!" class="text-decoration-none text-reset">Chợ ứng dụng -
-                      marketplace</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!" class="text-decoration-none text-reset">Tập huấn, chuyển giao
-                      công nghệ</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!" class="text-decoration-none text-reset">Tư vấn và Triển
-                      khai</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!" class="text-decoration-none text-reset">Tùy biến tính năng theo
-                      yêu cầu</a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!" class="text-decoration-none text-reset">Nâng cấp Odoo</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-12">
-            <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
-              <h4 class="overflow-y-hidden text-white">Cộng đồng</h4>
-              <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
-                 href="#collapseResources" role="button" aria-expanded="false"
-                 aria-controls="collapseResources">
-                <i class="bi bi-chevron-down"></i>
-              </a>
-            </div>
-            <div class="collapse d-lg-block" id="collapseResources" data-bs-parent="#ft-links">
-              <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
-                <li class="mb-2">
-                  <a href="#" class="text-decoration-none text-reset">Blogs Quản trị</a>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid header-nav">
+            <a class="mt-2" id="logo">
+              Bonus
+              <p>Zone</p>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tính năng</a>
                 </li>
-                <li class="mb-2">
-                  <a href="#!" class="text-decoration-none text-reset">Khóa học</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Dịch vụ</a>
                 </li>
-                <li class="mb-2">
-                  <a href="#" class="text-decoration-none text-reset">Chương trình Cộng tác
-                    viên</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nhiệm vụ</a>
                 </li>
-                <li class="mb-2">
-                  <a href="#!" class="text-decoration-none text-reset">Chương trình Đối tác</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Thành viên</a>
                 </li>
-
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-12">
-            <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
-              <h4 class="overflow-y-hidden text-white">Tài nguyên</h4>
-              <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
-                 href="#collapseLocations" role="button" aria-expanded="false"
-                 aria-controls="collapseLocations">
-                <i class="bi bi-chevron-down"></i>
-              </a>
-            </div>
-            <div class="collapse d-lg-block"  data-bs-parent="#ft-links">
-              <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
-                <li class="mb-2">
-                  <a href="#" class="text-decoration-none text-reset">Github</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Liên hệ</a>
                 </li>
-                <li class="mb-2">
-                  <a href="#!" class="text-decoration-none text-reset">Runbot</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#" class="text-decoration-none text-reset">Tài sản thương hiệu</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#!" class="text-decoration-none text-reset">Chính sách</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Giới thiệu</a>
                 </li>
               </ul>
             </div>
           </div>
+        </nav>
+      </div>
+    </header>
+    <main class="banner">
+      <img src="/assets/img/nen.jpg" class="d-block w-100" alt="..." />
+      <div class="banner-content mb-4 text-dark">
+        <div class="col-md-5">
+          <h1 class="">
+            Ứng dụng hỗ trợ quản lý, phân loại, chấm điểm thành viên trong cộng
+            đồng
+          </h1>
+          <button href="#" class="content-btn">ĐĂNG KÍ NGAY</button>
+          <p>
+            <i class="bi bi-check-lg"></i> Miễn phí trọn đời phần mềm Quản lý
+            Công việc, Dự án
+          </p>
+          <p><i class="bi bi-check-lg"></i> Không giới hạn số người sử dụng</p>
         </div>
       </div>
-      <div class="col-lg-3 col-12">
-        <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
-          <h4 class="overflow-y-hidden text-white">Trợ giúp</h4>
-          <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
-             href="#collapseLocations" role="button" aria-expanded="false"
-             aria-controls="collapseLocations">
-            <i class="bi bi-chevron-down"></i>
-          </a>
-        </div>
-        <div class="collapse d-lg-block" data-bs-parent="#ft-links">
-          <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
-            <li class="mb-2">
-              <a href="#" class="text-decoration-none text-reset">Diễn đàn</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-decoration-none text-reset">Tài liệu hướng dẫn</a>
-            </li>
-            <li class="mb-2">
-              <a href="#" class="text-decoration-none text-reset">Trợ giúp</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-decoration-none text-reset"> Đặt lịch hẹn</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    </main>
+    <div class="container mb-2">
+      <h2 class="title mb-4">
+        Blockchain là gì?Công nghệ này có ảnh hưởng thế nào đến cuộc sống của
+        chúng ta?
+      </h2>
+      <p class="title1">
+        Blockchain là công nghệ được nhắc đến rất nhiều trong 10 năm trở lại
+        đây. Ngoài việc là chìa khóa khai sinh ra các loại tiền kỹ thuật số,
+        Blockchain còn được ứng dụng rất nhiều trong các lĩnh vực khác. Công
+        nghệ này nổi bật với tính bảo mật cao và không thể thay đổi dữ liệu.
+      </p>
+      <img
+        src="/assets/img/blockchain_1.jpg"
+        class="w-100 mb-5 rounded"
+        height="700"
+      />
     </div>
-  </div>
-  <div class="container mt-5" style="border-top: 1px solid white;">
-    <div class="row mt-5 ms-5">
-      <div class="col-lg-8 col-12">
-        <div class="row" id="ft-links">
-          <div class="col-lg-4 col-12">
-            <div class="position-relative">
-              <div class="mb-3 pb-2 d-flex justify-content-between">
-                <h4 class="overflow-y-hidden text-white">Liên hệ</h4>
+    <div class="container mb-2">
+      <p class="title1">
+        Blockchain được biết đến nhiều nhất với vai trò quan trọng trong các hệ
+        thống tiền điện tử để duy trì hồ sơ giao dịch an toàn và phi tập trung.
+        Tuy nhiên, thực tế là công nghệ này không chỉ giới hạn trong lĩnh vực
+        tiền điện tử. Blockchain có thể được sử dụng như “sổ cái” dữ liệu trong
+        bất kỳ ngành nào để ngăn dữ liệu bị thay đổi hoặc gian lận.
+      </p>
+      <p class="title1">
+        Kể từ khi Bitcoin được giới thiệu vào năm 2009, việc sử dụng Blockchain
+        đã bùng nổ thông qua việc tạo ra nhiều loại tiền điện tử, ứng dụng tài
+        chính phi tập trung (DeFi), mã thông báo không thể thay thế (NFT) và hợp
+        đồng thông minh.
+      </p>
+      <p class="title1">
+        Sau khi đã tìm hiểu nhanh Blockchain là gì, chúng ta hãy tiếp tục khám
+        phá xem công nghệ này hoạt động như thế nào nhé.
+      </p>
+    </div>
+    <div class="container mb-2">
+      <h2 class="title mb-4">Cách thức hoạt động của Blockchain là gì?</h2>
+      <img
+        src="/assets/img/blockchain_2.jpg"
+        class="w-100 mb-5 rounded"
+        height="700"
+      />
+    </div>
+    <div class="container mb-2">
+      <p class="title1">
+        Bạn có thể quen thuộc với bảng tính hoặc cơ sở dữ liệu trong công việc
+        hàng ngày. Thực chất, Blockchain cũng có bản chất tương tự, đây là cơ sở
+        dữ liệu nơi thông tin được nhập và lưu trữ vào. Tuy nhiên, điểm khác
+        biệt chính giữa cơ sở dữ liệu hoặc bảng tính truyền thống với Blockchain
+        là cách dữ liệu được cấu trúc và truy cập.
+      </p>
+      <p class="title1">
+        Về cơ bản, Blockchain hoạt động như một sổ cái kỹ thuật số phân tán, nơi
+        mỗi giao dịch được ghi chép lại một cách minh bạch và không thể thay
+        đổi. Bạn chỉ cần hiểu Blockchain như một chuỗi gồm các khối, trong đó
+        mỗi khối chứa dữ liệu về một giao dịch cụ thể. Khi một giao dịch mới
+        được thực hiện, thông tin sẽ được ghi vào một khối mới và sau đó khối
+        này được liên kết mật mã với khối trước đó, tạo thành một chuỗi liên
+        tục.
+      </p>
+      <p class="title1">
+        Điểm đặc biệt của Blockchain là tính phân quyền và không tập trung.
+        Không có một tổ chức nào quản lý sổ cái này. Thay vào đó, mỗi nút trong
+        mạng lưới Blockchain sẽ giữ một bản sao của sổ cái, đảm bảo tính minh
+        bạch và khó bị tấn công hay gian lận. Mỗi khi một giao dịch mới được
+        thêm vào, nó phải được xác nhận bởi một số lượng lớn các nút trong mạng,
+        qua đó đảm bảo tính chính xác và an toàn của thông tin.
+      </p>
+    </div>
+    <div class="container mb-2">
+      <h2 class="title mb-4">Có những loại Blockchain nào?</h2>
+      <img
+        src="/assets/img/blockchain_3.jpg"
+        class="w-100 mb-5 rounded"
+        height="700"
+      />
+    </div>
+    <div class="container mb-2">
+      <p class="title1">Blockchain có ba loại chính:</p>
+      <p class="title1 ms-5">
+        - Public Blockchain (Blockchain công khai): Đây là loại blockchain mở,
+        cho phép mọi người đều có thể tham gia, xác minh và thực hiện giao dịch.
+        Ví dụ điển hình của loại Blockchain này là Bitcoin và Ethereum. Trong
+        loại Public Blockchain, mọi giao dịch đều công khai và minh bạch, nhưng
+        không ai có thể kiểm soát hoặc thay đổi dữ liệu đã được ghi vào
+        Blockchain.
+      </p>
+      <p class="title1 ms-5">
+        - Private Blockchain (Blockchain riêng tư): Khác với Public Blockchain,
+        Private Blockchain chỉ cho phép một số người dùng cụ thể tham gia. Loại
+        Blockchain này thường được sử dụng trong các tổ chức hoặc doanh nghiệp
+        để đảm bảo quyền truy cập và quyền thực hiện giao dịch được kiểm soát
+        chặt chẽ. Private Blockchain giúp tăng cường bảo mật và quản lý hiệu quả
+        hơn so với Public Blockchain.
+      </p>
+      <p class="title1 ms-5">
+        - Permissioned Blockchain (Blockchain có quyền hạn): Đây là một dạng của
+        Private Blockchain, nhưng người dùng được cung cấp một số tính năng đặc
+        quyền khác tùy thuộc vào bên thứ ba cung cấp. Permissioned Blockchain
+        thường được sử dụng trong các môi trường doanh nghiệp để đảm bảo sự linh
+        hoạt và kiểm soát cao đối với quyền truy cập và quyền thực hiện giao
+        dịch.
+      </p>
+    </div>
+    <div class="container mb-2">
+      <h2 class="title mb-4">Có những phiên bản Blockchain nào?</h2>
+      <img
+        src="/assets/img/blockchain_4.jpg"
+        class="w-100 mb-5 rounded"
+        height="700"
+      />
+    </div>
+    <div class="container mb-2">
+      <p class="title1">
+        Blockchain đã phát triển qua nhiều phiên bản với các ứng dụng và tính
+        năng khác nhau:
+      </p>
+      <p class="title1 ms-5">
+        - <span class="fw-bold">Blockchain 1.0:</span> Đây là phiên bản đầu tiên
+        của Blockchain, tập trung vào việc tạo ra và quản lý tiền điện tử như
+        Bitcoin. Mục tiêu chính của phiên bản này là cung cấp một phương thức
+        thanh toán kỹ thuật số an toàn và không cần trung gian.
+      </p>
+      <p class="title1 ms-5">
+        - <span class="fw-bold">Blockchain 2.0:</span> Được phát triển từ
+        Blockchain 1.0, phiên bản này mở rộng ứng dụng của Blockchain vào các
+        hợp đồng thông minh (smart contracts) và các ứng dụng tài chính.
+        Ethereum là ví dụ nổi bật cho Blockchain 2.0, nơi người dùng có thể tạo
+        và thực thi hợp đồng thông minh trên một nền tảng phi tập trung.
+      </p>
+      <p class="title1 ms-5">
+        - <span class="fw-bold">Blockchain 3.0:</span> Phiên bản này mở rộng ứng
+        dụng của Blockchain ra ngoài tài chính, bao gồm y tế, bầu cử, quản lý
+        tài nguyên, logistics và nhiều lĩnh vực khác. Mục tiêu của Blockchain
+        3.0 là tận dụng tính minh bạch và không tập trung của công nghệ chuỗi
+        khối để cải thiện hiệu quả và an toàn trong công việc.
+      </p>
+    </div>
+    <div class="container mb-2">
+      <h2 class="title mb-4">Có bao nhiêu loại Blockchain?</h2>
+      <img
+        src="/assets/img/blockchain_5.jpg"
+        class="w-100 mb-5 rounded"
+        height="700"
+      />
+    </div>
+    <div class="container mb-2">
+      <p class="title1">
+        Số lượng Blockchain đang tăng lên mỗi ngày với tốc độ chóng mặt. Tính
+        đến nay có hơn 23.000 loại tiền điện tử đang hoạt động dựa trên
+        Blockchain. Đó còn chưa kể có hàng trăm Blockchain không phải tiền điện
+        tử cũng đang hoạt động.
+      </p>
+    </div>
+    <div class="container mb-2">
+      <h2 class="title mb-4">Đặc điểm nổi bật của Blockchain là gì?</h2>
+      <img
+        src="/assets/img/blockchain_1.jpg"
+        class="w-100 mb-5 rounded"
+        height="700"
+      />
+    </div>
+    <div class="container mb-2">
+      <p class="title1">Blockchain nổi bật với những đặc điểm sau:</p>
+      <p class="title1 ms-5">
+        - <span class="fw-bold">Tính minh bạch và không thể thay đổi:</span> Mỗi
+        giao dịch trên Blockchain đều được ghi chép một cách minh bạch và không
+        thể thay đổi sau khi đã được hệ thống xác nhận, nhờ đó tăng cường tính
+        an toàn và độ tin cậy.
+      </p>
+      <p class="title1 ms-5">
+        - <span class="fw-bold">Phân quyền và phi tập trung:</span> Blockchain
+        hoạt động mà không cần một tổ chức quản lý tập trung. Mỗi nút trong mạng
+        lưới đều giữ một bản sao của sổ cái, giúp đảm bảo tính toàn vẹn và minh
+        bạch của dữ liệu
+      </p>
+      <p class="title1 ms-5">
+        - <span class="fw-bold">Bảo mật cao:</span> Nhờ sử dụng mã hóa tiên tiến
+        và cơ chế xác nhận giao dịch phức tạp, Blockchain đảm bảo rằng dữ liệu
+        không thể bị hack hoặc thay đổi trái phép.
+      </p>
+      <p class="title1 ms-5">
+        -
+        <span class="fw-bold">Tự động hóa qua hợp đồng thông minh:</span>
+        Blockchain cho phép tạo và thực thi các hợp đồng thông minh (smart
+        contracts), tự động hóa các quy trình và giao dịch mà không cần sự can
+        thiệp của con người.
+      </p>
+      <p class="title1">
+        Những đặc điểm này làm cho Blockchain trở thành một công nghệ mang tính
+        cách mạng với khả năng ứng dụng trong nhiều lĩnh vực khác nhau, từ tài
+        chính, y tế đến quản lý chuỗi cung ứng và bảo mật thông tin.
+      </p>
+    </div>
+    <div class="container mb-2">
+      <h2 class="title mb-4">Ứng dụng của Blockchain là gì?</h2>
+      <img
+        src="/assets/img/blockchain_6.jpg"
+        class="w-100 mb-5 rounded"
+        height="700"
+      />
+    </div>
+    <div class="container mb-2">
+      <p class="title1">
+        Với khả năng bảo mật cao và tính minh bạch tuyệt đối, Blockchain đã được
+        ứng dụng trong nhiều lĩnh vực khác nhau, bao gồm:
+      </p>
+      <p class="title1 ms-5">
+        - <span class="fw-bold">Tiền điện tử:</span> Đây là ứng dụng phổ biến
+        nhất của Blockchain, mà Bitcoin là ví dụ nổi tiếng nhất. Công nghệ này
+        cung cấp một hệ thống thanh toán kỹ thuật số an toàn và không cần trung
+        gian cho người dùng trên toàn thế giới.
+      </p>
+      <p class="title1 ms-5">
+        - <span class="fw-bold">Hợp đồng thông minh:</span> Blockchain cho phép
+        tạo và thực thi các hợp đồng tự động, minh bạch và không thể thay đổi.
+        Vì vậy, công nghệ này đang được ứng dụng nhiều trong các hệ thống tài
+        chính lớn, tổ chức bất động sản và nhiều lĩnh vực khác.
+      </p>
+      <p class="title1 ms-5">
+        - <span class="fw-bold">Quản lý chuỗi cung ứng:</span> Blockchain giúp
+        theo dõi và quản lý chuỗi cung ứng một cách chính xác và minh bạch, từ
+        nguồn gốc sản phẩm đến quá trình phân phối. Một số công ty như Walmart,
+        Pfizer, AIG, Siemens và Unilever cũng đang thử nghiệm Blockchain trong
+        quả lý chuỗi cung ứng của họ trên toàn cầu.
+      </p>
+      <p class="title1 ms-5">
+        -
+        <span class="fw-bold">Bảo mật dữ liệu và bảo vệ quyền riêng tư:</span>
+        Blockchain cũng được ứng dụng trong việc lưu trữ và bảo vệ dữ liệu cá
+        nhân để ngăn chặn gian lận và tăng cường bảo mật thông tin.
+      </p>
+      <p class="title1 ms-5">
+        - <span class="fw-bold">Y tế:</span> Blockchain thậm chí còn có thể được
+        sử dụng để lưu trữ và quản lý hồ sơ y tế, giúp việc chia sẻ thông tin
+        giữa các bên liên quan trở nên an toàn và hiệu quả hơn.
+      </p>
+      <p class="title1">
+        Như bạn có thể thấy, Blockchain không chỉ giới hạn trong lĩnh vực tài
+        chính mà còn mở rộng sang nhiều ngành công nghiệp khác, mang lại một
+        cuộc cách mạng trong cách quản lý và trao đổi thông tin.
+      </p>
+    </div>
+    <footer class="bg-black">
+      <div class="container">
+        <div class="row mt-5 ms-5">
+          <div class="col-lg-9 col-12">
+            <div class="row">
+              <div class="col-lg-3 col-12">
+                <div class="position-relative">
+                  <div class="mb-3 pb-2 d-flex justify-content-between">
+                    <h4 class="overflow-y-hidden text-white">Về chúng tôi</h4>
+                  </div>
+                  <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+                    <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                      <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-reset"
+                          >Giới thiệu chung</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#!" class="text-decoration-none text-reset"
+                          >Tin tức</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#!" class="text-decoration-none text-reset"
+                          >Báo chí</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#!" class="text-decoration-none text-reset"
+                          >Sự kiện</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#!" class="text-decoration-none text-reset"
+                          >Podcast</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="collapse d-lg-block" id="collapseLanding" data-bs-parent="#ft-links">
-                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
-                  <li class="mb-2">
-                    <a href="#" class="text-decoration-none text-reset">Hotline: <span>+84 0337
-                                                    092 423</span></a>
-                  </li>
-                  <li class="mb-2">
-                    <a href="#!"
-                       class="text-decoration-none text-reset">Email:kieukienquocvn@gmail.com</a>
-                  </li>
-                </ul>
+              <div class="col-lg-3 col-12">
+                <div>
+                  <div
+                    class="mb-3 pb-2 d-flex justify-content-between position-relative"
+                  >
+                    <h4 class="overflow-y-hidden text-white">Dịch vụ</h4>
+                    <a
+                      class="d-block d-lg-none stretched-link text-body"
+                      data-bs-toggle="collapse"
+                      href="#collapseAccounts"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseAccounts"
+                    >
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                  </div>
+                  <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+                    <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                      <li class="mb-2">
+                        <a href="#!" class="text-decoration-none text-reset"
+                          >Chợ ứng dụng - marketplace</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#!" class="text-decoration-none text-reset"
+                          >Tập huấn, chuyển giao công nghệ</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#!" class="text-decoration-none text-reset"
+                          >Tư vấn và Triển khai</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#!" class="text-decoration-none text-reset"
+                          >Tùy biến tính năng theo yêu cầu</a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#!" class="text-decoration-none text-reset"
+                          >Nâng cấp Odoo</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="text-md-end d-flex align-items-center">
-                <div class="d-flex gap-2">
-                  <a href="#!" class="btn">
-                    <i class="bi bi-instagram"></i>
+              <div class="col-lg-3 col-12">
+                <div
+                  class="mb-3 pb-2 d-flex justify-content-between position-relative"
+                >
+                  <h4 class="overflow-y-hidden text-white">Cộng đồng</h4>
+                  <a
+                    class="d-block d-lg-none stretched-link text-body"
+                    data-bs-toggle="collapse"
+                    href="#collapseResources"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseResources"
+                  >
+                    <i class="bi bi-chevron-down"></i>
                   </a>
-                  <a href="#!" class="btn">
-                    <i class="bi bi-twitter-x"></i>
+                </div>
+                <div
+                  class="collapse d-lg-block"
+                  id="collapseResources"
+                  data-bs-parent="#ft-links"
+                >
+                  <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                    <li class="mb-2">
+                      <a href="#" class="text-decoration-none text-reset"
+                        >Blogs Quản trị</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-decoration-none text-reset"
+                        >Khóa học</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="text-decoration-none text-reset"
+                        >Chương trình Cộng tác viên</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-decoration-none text-reset"
+                        >Chương trình Đối tác</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-12">
+                <div
+                  class="mb-3 pb-2 d-flex justify-content-between position-relative"
+                >
+                  <h4 class="overflow-y-hidden text-white">Tài nguyên</h4>
+                  <a
+                    class="d-block d-lg-none stretched-link text-body"
+                    data-bs-toggle="collapse"
+                    href="#collapseLocations"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseLocations"
+                  >
+                    <i class="bi bi-chevron-down"></i>
                   </a>
-                  <a href="#!" class="btn">
-                    <i class="bi bi-linkedin"></i>
-                  </a>
-                  <a href="#!" class="btn">
-                    <i class="bi bi-youtube"></i>
-                  </a>
-                  <a href="#!" class="btn">
-                    <i class="bi bi-spotify"></i>
-                  </a>
-                  <a href="#!" class="btn">
-                    <i class="bi bi-threads"></i>
-                  </a>
+                </div>
+                <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+                  <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                    <li class="mb-2">
+                      <a href="#" class="text-decoration-none text-reset"
+                        >Github</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-decoration-none text-reset"
+                        >Runbot</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a href="#" class="text-decoration-none text-reset"
+                        >Tài sản thương hiệu</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-decoration-none text-reset"
+                        >Chính sách</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div
+              class="mb-3 pb-2 d-flex justify-content-between position-relative"
+            >
+              <h4 class="overflow-y-hidden text-white">Trợ giúp</h4>
+              <a
+                class="d-block d-lg-none stretched-link text-body"
+                data-bs-toggle="collapse"
+                href="#collapseLocations"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseLocations"
+              >
+                <i class="bi bi-chevron-down"></i>
+              </a>
+            </div>
+            <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+              <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset"
+                    >Diễn đàn</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset"
+                    >Tài liệu hướng dẫn</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset"
+                    >Trợ giúp</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset"
+                    > Đặt lịch hẹn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5" style="border-top: 1px solid white">
+        <div class="row mt-5 ms-5">
+          <div class="col-lg-8 col-12">
+            <div class="row" id="ft-links">
+              <div class="col-lg-4 col-12">
+                <div class="position-relative">
+                  <div class="mb-3 pb-2 d-flex justify-content-between">
+                    <h4 class="overflow-y-hidden text-white">Liên hệ</h4>
+                  </div>
+                  <div
+                    class="collapse d-lg-block"
+                    id="collapseLanding"
+                    data-bs-parent="#ft-links"
+                  >
+                    <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                      <li class="mb-2">
+                        <a href="#" class="text-decoration-none text-reset"
+                          >Hotline: <span>+84 0337 092 423</span></a
+                        >
+                      </li>
+                      <li class="mb-2">
+                        <a href="#!" class="text-decoration-none text-reset"
+                          >Email:kieukienquocvn@gmail.com</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="text-md-end d-flex align-items-center">
+                    <div class="d-flex gap-2">
+                      <a href="#!" class="btn">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                      <a href="#!" class="btn">
+                        <i class="bi bi-twitter-x"></i>
+                      </a>
+                      <a href="#!" class="btn">
+                        <i class="bi bi-linkedin"></i>
+                      </a>
+                      <a href="#!" class="btn">
+                        <i class="bi bi-youtube"></i>
+                      </a>
+                      <a href="#!" class="btn">
+                        <i class="bi bi-spotify"></i>
+                      </a>
+                      <a href="#!" class="btn">
+                        <i class="bi bi-threads"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12">
+                <div>
+                  <div
+                    class="mb-3 pb-2 d-flex justify-content-between position-relative"
+                  >
+                    <h4 class="overflow-y-hidden text-white">Địa chỉ</h4>
+                    <a
+                      class="d-block d-lg-none stretched-link text-body"
+                      data-bs-toggle="collapse"
+                      href="#collapseAccounts"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseAccounts"
+                    >
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                  </div>
+                  <div
+                    class="collapse d-lg-block"
+                    id="collapseAccounts"
+                    data-bs-parent="#ft-links"
+                  >
+                    <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                      <li class="mb-2">
+                        <a href="#!" class="text-decoration-none text-reset"
+                          >Trường Cao đẳng FPT Polytechnic</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-12">
-            <div>
-              <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
-                <h4 class="overflow-y-hidden text-white">Địa chỉ</h4>
-                <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
-                   href="#collapseAccounts" role="button" aria-expanded="false"
-                   aria-controls="collapseAccounts">
-                  <i class="bi bi-chevron-down"></i>
-                </a>
-              </div>
-              <div class="collapse d-lg-block" id="collapseAccounts" data-bs-parent="#ft-links">
-                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
-                  <li class="mb-2">
-                    <a href="#!" class="text-decoration-none text-reset">Trường Cao đẳng FPT
-                      Polytechnic</a>
-                  </li>
-                </ul>
-              </div>
+            <div
+              class="mb-3 pb-2 d-flex justify-content-between position-relative"
+            >
+              <h4 class="overflow-y-hidden text-white">Đăng ký kinh doanh</h4>
+              <a
+                class="d-block d-lg-none stretched-link text-body"
+                data-bs-toggle="collapse"
+                href="#collapseLocations"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseLocations"
+              >
+                <i class="bi bi-chevron-down"></i>
+              </a>
+            </div>
+            <div
+              class="collapse d-lg-block"
+              id="collapseLocations"
+              data-bs-parent="#ft-links"
+            >
+              <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset"
+                    >Mã số Doanh nghiệp: 0000000000</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset"
+                    >Được cấp phép bởi Sở Kế hoạch và Đầu tư Hải Phòng</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-12">
-        <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
-          <h4 class="overflow-y-hidden text-white">Đăng ký kinh doanh</h4>
-          <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
-             href="#collapseLocations" role="button" aria-expanded="false"
-             aria-controls="collapseLocations">
-            <i class="bi bi-chevron-down"></i>
-          </a>
+      <!--  -->
+      <div class="container mt-7">
+        <div class="row align-items-center">
+          <div class="col-md-3 d-flex ms-5">
+            <a class="mb-4 mb-lg-0 d-block text-inverse" href="#"
+              ><img
+                src="/assets/img/logo-da-thong-bao-bo-cong-thuong-mau-xanh.png"
+                width="100px"
+                alt=""
+            /></a>
+            <a class="mb-4 mb-lg-0 d-block text-inverse ms-2" href="#"
+              ><img src="/assets/img/logo-dmca.png" width="100px" alt=""
+            /></a>
+          </div>
+          <div class="col-md-8 col-lg-6">
+            <div class="small mb-3 mb-lg-0 text-lg-center">
+              Copyright belongs to web Technology Joint Stock Company
+            </div>
+          </div>
+          <div class="col-md-2"></div>
         </div>
-        <div class="collapse d-lg-block" id="collapseLocations" data-bs-parent="#ft-links">
-          <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
-            <li class="mb-2">
-              <a href="#" class="text-decoration-none text-reset">Mã số Doanh nghiệp: 0000000000</a>
-            </li>
-            <li class="mb-2">
-              <a href="#!" class="text-decoration-none text-reset">Được cấp phép bởi Sở Kế hoạch và
-                Đầu tư Hải Phòng</a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </div>
-  </div>
-  <!--  -->
-  <div class="container mt-7">
-    <div class="row align-items-center">
-      <div class="col-md-3 d-flex ms-5">
-        <a class="mb-4 mb-lg-0 d-block text-inverse" href="#"><img
-            src="/assets/img/logo-da-thong-bao-bo-cong-thuong-mau-xanh.png" width="100px" alt=""></a>
-        <a class="mb-4 mb-lg-0 d-block text-inverse ms-2" href="#"><img src="/assets/img/logo-dmca.png"
-                                                                        width="100px" alt=""></a>
-      </div>
-      <div class="col-md-8 col-lg-6">
-        <div class="small mb-3 mb-lg-0 text-lg-center">
-          Copyright belongs to web Technology Joint Stock Company</div>
-      </div>
-      <div class="col-md-2">
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- AOS JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-<script src="/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
-
+    </footer>
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
