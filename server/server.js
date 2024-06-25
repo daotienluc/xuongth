@@ -6,7 +6,7 @@ const User = require("../models/user.model");
 const jwt = require("jsonwebtoken");
 const path = require("path");
 const cors = require("cors");
-require("dotenv").config({ path: "config.env" }); // Nếu sử dụng tên file khác như config.env
+require("dotenv").config({ path: "config.env" });
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -14,6 +14,10 @@ const port = process.env.PORT || 3001;
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "../client")));
 app.use(cors());
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/index.html"));
+});
 
 app.use((req, res, next) => {
   console.log(`Request URL: ${req.url}`);
