@@ -6,7 +6,7 @@ const User = require("../models/user.model");
 const jwt = require("jsonwebtoken");
 const path = require("path");
 const cors = require("cors");
-require("dotenv").config();
+require("dotenv").config({ path: "config.env" }); // Nếu sử dụng tên file khác như config.env
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -28,14 +28,18 @@ const authenticateJWT = (req, res, next) => {
   if (authHeader) {
     const token = authHeader.split(" ")[1];
 
-    jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
-      if (err) {
-        return res.sendStatus(403);
-      }
+    jwt.verify(
+      token,
+      process.env.ACCESS_TOKEN_SECRET || "default_secret_value",
+      (err, user) => {
+        if (err) {
+          return res.sendStatus(403);
+        }
 
-      req.user = user;
-      next();
-    });
+        req.user = user;
+        next();
+      }
+    );
   } else {
     res.sendStatus(401);
   }
@@ -100,10 +104,15 @@ app.post("/login", async (req, res) => {
       { expiresIn: "1h" }
     );
 
+    // Đảm bảo trả về thông tin người dùng trong phản hồi
     res.json({
       success: true,
       message: "Đăng nhập thành công!",
       accessToken,
+      user: {
+        username: user.username,
+        walletAddress: user.walletAddress,
+      },
     });
   } catch (error) {
     console.error("Đã xảy ra lỗi khi đăng nhập:", error);

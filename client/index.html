@@ -11,10 +11,11 @@
     <title>Trang chủ</title>
   </head>
   <body>
-    <a id="signup-link" class="btn-dk" href="./signup.html">Đăng ký</a>
-    <a id="login-link" class="btn-dn" href="./login.html">Đăng Nhập</a>
-
     <header id="header">
+      <div class="header_btn">
+        <a id="signup-link" class="btn-dk" href="./signup.html">Đăng ký</a>
+        <a id="login-link" class="btn-dn" href="./login.html">Đăng Nhập</a>
+      </div>
       <div class="header-nav">
         <a id="logo">
           Bonus
@@ -22,31 +23,33 @@
         </a>
         <ul>
           <li>
-            <a href="">Giới thiệu</a>
-            <a href="">Giới thiệu</a>
-            <a href="">Giới thiệu</a>
-            <a href="">Giới thiệu</a>
-            <a href="">Giới thiệu</a>
+            <a href="#">Tính năng </a>
+            <a href="#">Sự kiện</a>
+            <a href="#">Bảng xếp hạng</a>
+            <a href="#">Bài viết</a>
+            <a href="#">Liên hệ </a>
+            <a href="#">Giới thiệu</a>
           </li>
         </ul>
       </div>
     </header>
-    <div id="content">
-      <img class="content-img" src="./../assets/img/nen.jpg" alt="" />
+    <div class="container">
       <div class="content-introduce">
-        <h1>
-          Ứng dụng hỗ trợ quản lí, phân loại chấm điểm thành viên trong cộng
-          đồng
-        </h1>
-        <button href="#" class="content-btn">ĐĂNG KÍ NGAY</button>
-        <p>
-          <i class="fa-solid fa-check"></i>
-          Miễn phí trọn đời phần mềm Quản lý Công việc, Dự án
-        </p>
-        <p>
-          <i class="fa-solid fa-check"></i>
-          Không giới hạn số người sử dụng
-        </p>
+        <div class="introduce_title">
+          <h1>
+            Ứng dụng hỗ trợ quản lí, phân loại chấm điểm thành viên trong cộng
+            đồng
+          </h1>
+          <button href="#" class="content-btn">ĐĂNG KÍ NGAY</button>
+          <p>
+            <i class="fa-solid fa-check"></i>
+            Miễn phí trọn đời phần mềm Quản lý Công việc, Dự án
+          </p>
+          <p>
+            <i class="fa-solid fa-check"></i>
+            Không giới hạn số người sử dụng
+          </p>
+        </div>
       </div>
       <div class="content-introduce2">
         <img
@@ -84,8 +87,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
       <div class="content-introduce3">
         <h1>Ứng dụng BonusZone Project</h1>
         <p>
@@ -96,27 +97,361 @@
       <div class="container-introduce4">
         <h2>Bám sát tiến độ, kiểm soát quy trình làm việc</h2>
         <p>Hoạt động linh hoạt giúp thực hiện dự án, công việc dễ dàng hơn.</p>
-        <div class="container-introduce4_list">
-          <h6>Theo dõi và bám sát tiến độ công việc</h6>
-          <span>
-            <i class="fa-solid fa-caret-down"></i>
-            Lập kế hoạch và quản lý công việc theo thứ tự ưu tiên.
-          </span>
-          <span>
-            <i class="fa-solid fa-caret-down"></i>
-            Kiểm soát tiến độ công việc của từng nhân viên: nhiệm vụ, thời gian
-            thực hiện,ngày đến hạn, quá hạn, v.v.
-          </span>
-          <span>
-            <i class="fa-solid fa-caret-down"></i>
-            Theo dõi thời gian làm việc có ích thay vì thời gian có mặt của nhân
-            viên nhờ tích hợp chấm công ngay trên nhiệm vụ.
-          </span>
+        <div class="introduce4_list">
+          <div class="introduce4_items">
+            <h6>Theo dõi và bám sát tiến độ công việc</h6>
+            <span>
+              <i class="fa-solid fa-caret-down"></i>
+              Lập kế hoạch và quản lý công việc theo thứ tự ưu tiên.
+            </span>
+            <br />
+            <span>
+              <i class="fa-solid fa-caret-down"></i>
+              Kiểm soát tiến độ công việc của từng nhân viên: nhiệm vụ, thời
+              gian thực hiện,ngày đến hạn, quá hạn, v.v.
+            </span>
+            <br />
+            <span>
+              <i class="fa-solid fa-caret-down"></i>
+              Theo dõi thời gian làm việc có ích thay vì thời gian có mặt của
+              nhân viên nhờ tích hợp chấm công ngay trên nhiệm vụ.
+            </span>
+          </div>
+          <div class="introduce4_items">
+            <h6>Chuẩn hóa quy trình làm việc</h6>
+            <span>
+              <i class="fa-solid fa-caret-down"></i>
+              Tùy chỉnh & kéo thả để chuyển giai đoạn các nhiệm vụ trên giao
+              diện Kanban.
+            </span>
+            <br />
+            <span>
+              <i class="fa-solid fa-caret-down"></i>
+              Thiết lập quy trình quản lý công việc khoa học. Phối hợp nhịp
+              nhàng giữa các phòng ban, phát hiện ngay điểm "nghẽn" để xử lý.
+            </span>
+            <br />
+            <span>
+              <i class="fa-solid fa-caret-down"></i>
+              Tự động gửi email cập nhật thông tin khi thay đổi giai đoạn của
+              nhiệm vụ.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="container-introduce5">
+        <div class="introduce5_title">
+          <h2>Bám sát tiến độ, kiểm soát quy trình làm việc</h2>
+          <p>
+            Hoạt động linh hoạt giúp thực hiện dự án, công việc dễ dàng hơn.
+          </p>
+        </div>
+        <div class="introduce5_list">
+          <div class="introduce5_items">
+            <img src="./../assets/img/introdouce5.jpg" alt="" />
+          </div>
+          <div class="introduce5_items">
+            <p>
+              <i class="fa-solid fa-table-cells-large"></i>
+              Giao diện thẻ Kanban
+            </p>
+            <p>
+              <i class="fa-solid fa-list"></i>
+              Giao diện danh sách
+            </p>
+            <p>
+              <i class="fa-solid fa-calendar-days"></i>
+              Lịch biểu
+            </p>
+            <p>
+              <i class="fa-solid fa-table-cells"></i>
+              Bảng tổng hợp số liệu
+            </p>
+            <p>
+              <i class="fa-solid fa-chart-column"></i>
+              Biểu đồ so sánh
+            </p>
+            <p>
+              <i class="fa-regular fa-clock"></i>
+              Ấn định hành động
+            </p>
+            <p>
+              <i class="fa-solid fa-chart-simple"></i>
+              Sơ đồ Gantt
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-introduce6">
+        <div class="introduce6_title">
+          <h2>Làm việc cộng tác, thông tin minh bạch </h2>
+          <p>
+            Phân chia công việc và phối hợp thực hiện giữa các phòng ban trên
+            cùng một giao diện phần mềm.
+          </p>
+        </div>
+        <div class="introduce6_list">
+          <div class="introduce6_items">
+            <div class="item1">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Gửi tin nhắn, đính kèm tài liệu, hình ảnh, ghi chú và thêm người
+                theo dõi ngay trong nhiệm vụ.
+              </p>
+            </div>
+            <div class="item2">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Ghi nhận lịch sử làm việc và thông tin trao đổi, cộng tác giữa
+                các phòng ban.
+              </p>
+            </div>
+            <div class="item3">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Gửi email, cộng tác với khách hàng ngay trên giao diện nhiệm vụ
+                mà vẫn đảm bảo tính bảo mật.
+              </p>
+            </div>
+            <div class="item4">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Tạo hành động tự động để nhắc nhở thực hiện, tránh bỏ sót hay
+                quên nhiệm vụ.
+              </p>
+            </div>
+            <div class="item5">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Tích hợp etherpad - cộng tác trên từng nhiệm vụ trong thời gian
+                thực.
+              </p>
+            </div>
+            <div class="item6">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Làm việc trực tuyến trên mọi thiết bị.</p>
+            </div>
+          </div>
+          <div class="introduce6_items">
+            <img src="./../assets/img/introdouce6.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="container-introduce5">
+        <div class="introduce5_title">
+          <h2>Dự báo nhu cầu và người tham gia</h2>
+        </div>
+        <div class="introduce5_list">
+          <div class="introduce5_items">
+            <img src="./../assets/img/introdouce7.jpg" alt="" />
+          </div>
+          <div class="introduce5_items">
+            <p>
+              <i class="fa-solid fa-circle-check"></i>
+              Phân bổ nguồn lực, giao việc theo người thực hiện hoặc theo phòng
+              ban.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>
+              Lập dự báo thời gian và deadline cho từng dự án.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>
+              Tiến trình của dự án được cập nhật đầy đủ trên bảng theo dõi và
+              liên kết sang OKR.
+            </p>
+            <p>
+              <i class="fa-solid fa-circle-check"></i>
+              So sánh thời gian dự kiến và thời gian thực tế để tính toán lợi
+              nhuận.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-introduce6">
+        <div class="introduce6_title">
+          <h2>Báo cáo tổng quan, tức thời của Giải pháp quản lý dự án</h2>
+          <p>
+            Trực quan hóa dữ liệu, giảm tải khối lượng công việc của nhà quản lý
+            và nhân sự
+          </p>
+        </div>
+        <div class="introduce6_list">
+          <div class="introduce6_items">
+            <div class="item1">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Biến các số liệu đo lường khô khan thành biểu đồ, bảng biểu rõ
+                ràng, trực quan, sinh động, cập nhật dữ liệu theo thời gian
+                thực.
+              </p>
+            </div>
+            <div class="item2">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Xem báo cáo theo nhiều tiêu chí lọc nhóm: nhân viên, trạng thái,
+                thời gian thực hiện, deadline,...
+              </p>
+            </div>
+            <div class="item3">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Phân tích báo cáo từ tổng quan đến chi tiết: </p>
+            </div>
+            <div class="item4">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>
+                Báo cáo tổng quan dự án: tổng thời gian làm việc của nhân viên,
+                ghi nhận khả năng sinh lời của dự án
+              </p>
+            </div>
+            <div class="item5">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Báo cáo Chi phí và Doanh thu dự án chi tiết</p>
+            </div>
+            <div class="item6">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Báo cáo phân tích nhiệm vụ với giao diện Gantt</p>
+            </div>
+          </div>
+          <div class="introduce6_items">
+            <img src="./../assets/img/introdouce8.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="container-introduce7">
+        <div class="introduce7_title">
+          <h2>Tích hợp đầy đủ với các Ứng dụng khác</h2>
+        </div>
+        <div class="introduce7_list">
+          <div class="introduce7_items">
+            <h3>Sales</h3>
+            <p>
+              Quản lý báo giá, đơn bán, hóa đơn, tồn kho và thanh toán khách
+              hàng.
+            </p>
+            <a href="">Khám phá</a>
+          </div>
+          <div class="introduce7_items">
+            <h3>Sales</h3>
+            <p>
+              Quản lý báo giá, đơn bán, hóa đơn, tồn kho và thanh toán khách
+              hàng.
+            </p>
+            <a href="">Khám phá</a>
+          </div>
+          <div class="introduce7_items">
+            <h3>Sales</h3>
+            <p>
+              Quản lý báo giá, đơn bán, hóa đơn, tồn kho và thanh toán khách
+              hàng.
+            </p>
+            <a href="">Khám phá</a>
+          </div>
+          <div class="introduce7_items">
+            <h3>Sales</h3>
+            <p>
+              Quản lý báo giá, đơn bán, hóa đơn, tồn kho và thanh toán khách
+              hàng.
+            </p>
+            <a href="">Khám phá</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-grid">
+          <div class="footer-row">
+            <div class="footer-column">
+              <div class="footer-column1">
+                <h3>Về chúng tôi</h3>
+                <a href="">Giới thiệu chung</a>
+                <a href="">Tuyển dụng</a>
+                <a href="">​Tin tức</a>
+                <a href="">Báo chí</a>
+                <a href="">Sự kiện</a>
+                <a href="">Podcast</a>
+              </div>
+              <div class="footer-column1">
+                <h3>Dịch vụ</h3>
+                <a href="">Viindoo SaaS</a>
+                <a href="">Chợ ứng dụng - Viindoo marketplace</a>
+                <a href="">Tập huấn, chuyển giao công nghệ</a>
+                <a href="">Tư vấn và Triển khai</a>
+                <a href="">Tùy biến tính năng theo yêu cầu</a>
+                <a href="">Nâng cấp Odoo</a>
+              </div>
+              <div class="footer-column1">
+                <h3>Cộng đồng</h3>
+                <a href="">Blogs Quản trị</a>
+                <a href="">Khóa học</a>
+                <a href="">Chương trình Cộng tác viên</a>
+                <a href="">Chương trình Đối tác</a>
+              </div>
+              <div class="footer-column1">
+                <h3>Tài nguyên</h3>
+                <a href="">Github</a>
+                <a href="">Runbot</a>
+                <a href="">​Tài sản thương hiệu</a>
+                <a href="">Chính sách</a>
+              </div>
+              <div class="footer-column1">
+                <h3>Trợ giúp</h3>
+                <a href="">Diễn đàn</a>
+                <a href="">Tài liệu hướng dẫn</a>
+                <a href="">​Trợ giúp</a>
+                <a href="">Đặt lịch hẹn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-grid2">
+          <div class="footer-row2">
+            <div class="footer-column2">
+              <h3>Liên hệ</h3>
+              <p>
+                Hotline:
+                <a href="">+84 225 730 9838</a>
+              </p>
+              <p>
+                Email:
+                <a href="">Bonuszone@gmail.com</a>
+              </p>
+              <div class="footer-column2-icon">
+                <a href="">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-spotify"></i>
+                </a>
+                <a href="">
+                  <i class="fa-solid fa-envelope-circle-check"></i>
+                </a>
+              </div>
+            </div>
+            <div class="footer-column2">
+              <h3>Địa chỉ</h3>
+              <p>Trụ sở chính: Tòa F Trường cao đẳng FPT Polytechnic</p>
+            </div>
+            <div class="footer-column2">
+              <h3>Đăng kí kinh doanh</h3>
+              <p>Mã số Doanh nghiệp: 0201994665</p>
+              <p>
+                Được cấp phép bởi Sở Kế hoạch và Đầu tư Thành Phố Hồ Chí Minh
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div id="footer"></div>
-    <!-- AOS JavaScript -->
+    <!-- AOS JavaScript-->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script src="index.js"></script>
   </body>

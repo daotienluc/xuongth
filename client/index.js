@@ -2,14 +2,14 @@
 //đăng nhập
 const loginLink = document.getElementById("login-link");
 loginLink.addEventListener("click", function (event) {
-  event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+  event.preventDefault();
   window.location.href = "./login.html";
 });
 
 //đăng kí
 const signupLink = document.getElementById("signup-link");
 signupLink.addEventListener("click", function (event) {
-  event.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
+  event.preventDefault();
   window.location.href = "./signup.html";
 });
 

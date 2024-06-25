@@ -15,15 +15,17 @@ body {
 }
 
 #header {
-  padding: 50px 126px 20px 126px;
-  width: 100%;
   position: fixed;
+  width: 100%;
+  padding: 20px 0 20px 0;
   background-color: #fff;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.15);
   z-index: 10;
 }
 
 .header-nav {
+  max-width: 1140px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
 }
@@ -52,26 +54,30 @@ body {
   color: #000;
 }
 
+.header_btn {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 0 15px;
+  display: flex;
+  justify-content: right;
+}
+
 .btn-dk {
-  position: fixed;
-  right: 137px;
-  padding: 14px 0;
   font-size: 1rem;
   color: #000;
-  z-index: 11;
 }
 
 .btn-dn {
-  right: 230px;
-  position: fixed;
-  padding: 14px 0;
+  margin-left: 10px;
   font-size: 1rem;
-  font-weight: 600;
   color: #000;
-  z-index: 11;
 }
 
 .btn-dk:hover {
+  font-weight: 600;
+}
+
+.btn-dn:hover {
   font-weight: 600;
 }
 /* content */
