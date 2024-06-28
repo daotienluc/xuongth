@@ -141,6 +141,7 @@ body {
 }
 
 .content-introduce2-list {
+  position: relative;
   width: 50%;
   padding-left: 68px;
 }
@@ -148,6 +149,16 @@ body {
 .content-introduce2-item {
   padding-top: 102px;
   width: 100%;
+}
+
+.content-introduce2-item::after {
+  position: absolute;
+  content: "";
+  width: 450px;
+  height: 1px;
+  left: 75px;
+  top: 160px;
+  background-color: #747678;
 }
 
 .content-introduce2-list i {

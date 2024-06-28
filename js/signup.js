@@ -39,7 +39,7 @@ document
         alert("Đăng ký thành công!");
         localStorage.removeItem("isWalletConnected");
         localStorage.removeItem("walletAddress");
-        window.location.href = "./login.html";
+        window.location.href = "/login.html";
       } else {
         alert(`Đăng ký thất bại: ${result.message}`);
       }
@@ -72,7 +72,7 @@ document
   .addEventListener("click", connectWallet);
 
 const handleLogIn = () => {
-  window.location.href = "./login.html";
+  window.location.href = "/login.html";
 };
 document.getElementById("login-link").addEventListener("click", handleLogIn);
 
@@ -80,7 +80,7 @@ const logo = document.getElementById("logo");
 
 if (logo) {
   logo.addEventListener("click", function () {
-    window.location.href = "./index.html";
+    window.location.href = "/index.html";
   });
 }
 

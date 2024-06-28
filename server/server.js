@@ -6,7 +6,7 @@ const User = require("../models/user.model");
 const jwt = require("jsonwebtoken");
 const path = require("path");
 const cors = require("cors");
-require("dotenv").config({ path: "config.env" }); // Nếu sử dụng tên file khác như config.env
+require("dotenv").config({ path: "config.env" });
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -21,6 +21,16 @@ app.use((req, res, next) => {
 });
 
 app.use("/assets", express.static(path.join(__dirname, "../assets")));
+app.use("/js", express.static(path.join(__dirname, "../js")));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/index.html"));
+});
+
+app.use("/components", express.static(path.join(__dirname, "../components")));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../components/post.html"));
+});
 
 const authenticateJWT = (req, res, next) => {
   const authHeader = req.headers.authorization;

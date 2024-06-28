@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("logout").addEventListener("click", function () {
   localStorage.removeItem("username");
   localStorage.removeItem("accessToken");
-  window.location.href = "./login.html"; // Giả sử trang đăng nhập là login.html
+  window.location.href = "./login.html";
 });
 
 // xử lí chuyển trang
 const handleLogOut = () => {
-  window.location.href = "./index.html";
+  window.location.href = "/index.html";
 };
 document.getElementById("logout").addEventListener("click", handleLogOut);

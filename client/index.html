@@ -7,6 +7,11 @@
       rel="stylesheet"
       href="assets/font/fontawesome-free-6.5.1-web/css/all.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="/assets/css/main.css" />
     <title>Trang chủ</title>
   </head>
@@ -26,7 +31,7 @@
             <a href="#">Tính năng </a>
             <a href="#">Sự kiện</a>
             <a href="#">Bảng xếp hạng</a>
-            <a href="#">Bài viết</a>
+            <a href="#" id="Blog">Bài viết</a>
             <a href="#">Liên hệ </a>
             <a href="#">Giới thiệu</a>
           </li>
@@ -56,38 +61,43 @@
           src="./../assets/img/CEO.jpg"
           alt=""
           class="content-introduce2-img"
+          data-aos="fade-right"
         />
-        <div class="content-introduce2-list">
-          <h1>Là CEO - Bạn có đang Quản lý Công việc một cách "nhẹ nhàng"?</h1>
+        <div class="content-introduce2-list" data-aos="fade-left">
+          <h1>Quảng lý công việc khi sinh viên tham gia sự kiện của trường</h1>
           <div class="content-introduce2-item">
             <div class="content-introduce2-item1">
               <i class="fa-solid fa-circle-question"></i>
               <p>
-                Bạn có nắm được tiến độ công việc của nhân viên? Ai đang phụ
-                trách? Kết quả thế nào? Có vướng mắc?
+                Quản lý công việc dễ dàng: Nắm bắt tiến độ và kết quả công việc
+                của nhân viên một cách rõ ràng.
               </p>
             </div>
             <div class="content-introduce2-item2">
               <i class="fa-solid fa-circle-question"></i>
               <p>
-                Bạn có mất thời gian theo sát và nhắc nhở nhân viên làm việc?
+                Trách nhiệm rõ ràng: Đảm bảo nhân viên chịu trách nhiệm với công
+                việc của mình.
               </p>
             </div>
             <div class="content-introduce2-item3">
               <i class="fa-solid fa-circle-question"></i>
-              <p>Nhân viên có đùn đẩy trách nhiệm khi không đạt kết quả tốt?</p>
+              <p>
+                Giám sát thông minh: Theo dõi và nhắc nhở nhân viên một cách
+                hiệu quả mà không tốn nhiều thời gian.
+              </p>
             </div>
             <div class="content-introduce2-item4">
               <i class="fa-solid fa-circle-question"></i>
               <p>
-                Bạn có phải chờ đợi "mòn mỏi" khi yêu cầu nhân viên báo cáo công
-                việc?
+                Báo cáo nhanh chóng: Nhận báo cáo công việc từ nhân viên một
+                cách nhanh chóng và chính xác.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="content-introduce3">
+      <div class="content-introduce3" data-aos="fade-down">
         <h1>Ứng dụng BonusZone Project</h1>
         <p>
           Giải pháp quản lý, lập kế hoạch và theo dõi tiến độ công việc, dự án
@@ -95,10 +105,14 @@
         </p>
       </div>
       <div class="container-introduce4">
-        <h2>Bám sát tiến độ, kiểm soát quy trình làm việc</h2>
-        <p>Hoạt động linh hoạt giúp thực hiện dự án, công việc dễ dàng hơn.</p>
+        <h2 data-aos="fade-down">
+          Bám sát tiến độ, kiểm soát quy trình làm việc
+        </h2>
+        <p data-aos="fade-down">
+          Hoạt động linh hoạt giúp thực hiện dự án, công việc dễ dàng hơn.
+        </p>
         <div class="introduce4_list">
-          <div class="introduce4_items">
+          <div class="introduce4_items" data-aos="fade-right">
             <h6>Theo dõi và bám sát tiến độ công việc</h6>
             <span>
               <i class="fa-solid fa-caret-down"></i>
@@ -117,7 +131,7 @@
               nhân viên nhờ tích hợp chấm công ngay trên nhiệm vụ.
             </span>
           </div>
-          <div class="introduce4_items">
+          <div class="introduce4_items" data-aos="fade-left">
             <h6>Chuẩn hóa quy trình làm việc</h6>
             <span>
               <i class="fa-solid fa-caret-down"></i>
@@ -140,17 +154,17 @@
         </div>
       </div>
       <div class="container-introduce5">
-        <div class="introduce5_title">
+        <div class="introduce5_title" data-aos="fade-down">
           <h2>Bám sát tiến độ, kiểm soát quy trình làm việc</h2>
           <p>
             Hoạt động linh hoạt giúp thực hiện dự án, công việc dễ dàng hơn.
           </p>
         </div>
         <div class="introduce5_list">
-          <div class="introduce5_items">
+          <div class="introduce5_items" data-aos="fade-right">
             <img src="./../assets/img/introdouce5.jpg" alt="" />
           </div>
-          <div class="introduce5_items">
+          <div class="introduce5_items" data-aos="fade-left">
             <p>
               <i class="fa-solid fa-table-cells-large"></i>
               Giao diện thẻ Kanban
@@ -183,7 +197,7 @@
         </div>
       </div>
       <div class="container-introduce6">
-        <div class="introduce6_title">
+        <div class="introduce6_title" data-aos="fade-down">
           <h2>Làm việc cộng tác, thông tin minh bạch </h2>
           <p>
             Phân chia công việc và phối hợp thực hiện giữa các phòng ban trên
@@ -191,7 +205,7 @@
           </p>
         </div>
         <div class="introduce6_list">
-          <div class="introduce6_items">
+          <div class="introduce6_items" data-aos="fade-right">
             <div class="item1">
               <i class="fa-solid fa-circle-check"></i>
               <p>
@@ -232,20 +246,20 @@
               <p>Làm việc trực tuyến trên mọi thiết bị.</p>
             </div>
           </div>
-          <div class="introduce6_items">
+          <div class="introduce6_items" data-aos="fade-left">
             <img src="./../assets/img/introdouce6.jpg" alt="" />
           </div>
         </div>
       </div>
       <div class="container-introduce5">
-        <div class="introduce5_title">
+        <div class="introduce5_title" data-aos="fade-down">
           <h2>Dự báo nhu cầu và người tham gia</h2>
         </div>
         <div class="introduce5_list">
-          <div class="introduce5_items">
+          <div class="introduce5_items" data-aos="fade-right">
             <img src="./../assets/img/introdouce7.jpg" alt="" />
           </div>
-          <div class="introduce5_items">
+          <div class="introduce5_items" data-aos="fade-left">
             <p>
               <i class="fa-solid fa-circle-check"></i>
               Phân bổ nguồn lực, giao việc theo người thực hiện hoặc theo phòng
@@ -269,7 +283,7 @@
         </div>
       </div>
       <div class="container-introduce6">
-        <div class="introduce6_title">
+        <div class="introduce6_title" data-aos="fade-down">
           <h2>Báo cáo tổng quan, tức thời của Giải pháp quản lý dự án</h2>
           <p>
             Trực quan hóa dữ liệu, giảm tải khối lượng công việc của nhà quản lý
@@ -277,7 +291,7 @@
           </p>
         </div>
         <div class="introduce6_list">
-          <div class="introduce6_items">
+          <div class="introduce6_items" data-aos="fade-right">
             <div class="item1">
               <i class="fa-solid fa-circle-check"></i>
               <p>
@@ -313,45 +327,45 @@
               <p>Báo cáo phân tích nhiệm vụ với giao diện Gantt</p>
             </div>
           </div>
-          <div class="introduce6_items">
+          <div class="introduce6_items" data-aos="fade-left">
             <img src="./../assets/img/introdouce8.jpg" alt="" />
           </div>
         </div>
       </div>
       <div class="container-introduce7">
-        <div class="introduce7_title">
+        <div class="introduce7_title" data-aos="fade-down">
           <h2>Tích hợp đầy đủ với các Ứng dụng khác</h2>
         </div>
         <div class="introduce7_list">
-          <div class="introduce7_items">
-            <h3>Sales</h3>
+          <div class="introduce7_items" data-aos="fade-right">
+            <h3>Event</h3>
             <p>
               Quản lý báo giá, đơn bán, hóa đơn, tồn kho và thanh toán khách
               hàng.
             </p>
             <a href="">Khám phá</a>
           </div>
-          <div class="introduce7_items">
-            <h3>Sales</h3>
+          <div class="introduce7_items" data-aos="fade-right">
+            <h3>CRM</h3>
             <p>
-              Quản lý báo giá, đơn bán, hóa đơn, tồn kho và thanh toán khách
-              hàng.
+              Theo dấu tất cả phản hồi của KH, thực thi quy trình bán từ Nguồn
+              dẫn và Cơ hội.
             </p>
             <a href="">Khám phá</a>
           </div>
-          <div class="introduce7_items">
-            <h3>Sales</h3>
+          <div class="introduce7_items" data-aos="fade-left">
+            <h3>Điểm thưởng</h3>
             <p>
-              Quản lý báo giá, đơn bán, hóa đơn, tồn kho và thanh toán khách
-              hàng.
+              Ghi nhận và quản lý thời gian làm việc, tự động tính toán chi phí
+              dự án.
             </p>
             <a href="">Khám phá</a>
           </div>
-          <div class="introduce7_items">
-            <h3>Sales</h3>
+          <div class="introduce7_items" data-aos="fade-left">
+            <h3>Quản lý ví</h3>
             <p>
-              Quản lý báo giá, đơn bán, hóa đơn, tồn kho và thanh toán khách
-              hàng.
+              Tạo ví chỉ bằng 1 click chuột và nhận được thanh toán nhanh và
+              nhiều hơn.
             </p>
             <a href="">Khám phá</a>
           </div>
@@ -452,7 +466,8 @@
       </div>
     </div>
     <!-- AOS JavaScript-->
+
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script src="index.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
