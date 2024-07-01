@@ -1,223 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="/assets/font/fontawesome-free-6.5.1-web/css/all.css"
-    />
-    <link rel="stylesheet" href="/assets/css/crm.css" />
-    <title>CRM</title>
-  </head>
-  <body>
-    <a href="" class="btn-dk">Đăng kí</a>
-    <a href="#" class="btn-dn" onclick="btndn()">Đăng nhập</a>
-    <header id="header">
-      <div class="header-nav">
-        <a id="logo">
-          Bonus
-          <p>Zone</p>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/blockchain.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>CRM</title>
+</head>
+<body>
+<header class="bg-white fixed-top">
+  <div class="container">
+    <div class="row justify-content-end mt-2 mb-2">
+      <div class="col-1">
+        <a class="nav-link btn-dk fs-6" href="#">Đăng kí</a>
+      </div>
+      <div class="col-1">
+        <a class="nav-link btn-dn fs-6" href="#" onclick="btndn()">Đăng nhập</a>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid header-nav">
+        <a class="mt-2" id="logo">
+          Bonus <p>Zone</p>
         </a>
-        <ul>
-          <li>
-            <a href="">Giới thiệu</a>
-            <a href="">Giới thiệu</a>
-            <a href="">Giới thiệu</a>
-            <a href="">Giới thiệu</a>
-            <a href="">Giới thiệu</a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <div class="banner"></div>
-    <h2>5 phần mềm CRM giúp quản lí, chăm sóc khách hàng tốt nhất</h2>
-    <div class="grid">
-      <div class="row">
-        <div class="colunm">
-          <h3>1. BonusZone CRM</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            velit rem? Esse tempora nostrum optio ipsam nulla? Illum quae illo
-            libero eveniet veritatis facilis debitis sequi voluptas suscipit
-            quod beatae, quis saepe est blanditiis. Eligendi voluptas modi
-            maxime obcaecati ducimus, ab, veritatis quisquam dolor corrupti
-            iusto minima reiciendis amet vitae.
-          </p>
-          <img src="/assets/img/CRM.jpg" alt="" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tính năng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dịch vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nhiệm vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Thành viên</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giới thiệu</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <div class="grid">
-      <div class="row">
-        <div class="colunm">
-          <h3>2. Insightly CRM</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            velit rem? Esse tempora nostrum optio ipsam nulla? Illum quae illo
-            libero eveniet veritatis facilis debitis sequi voluptas suscipit
-            quod beatae, quis saepe est blanditiis. Eligendi voluptas modi
-            maxime obcaecati ducimus, ab, veritatis quisquam dolor corrupti
-            iusto minima reiciendis amet vitae.
-          </p>
-          <img src="/assets/img/CRM.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="row">
-        <div class="colunm">
-          <h3>3. Bravo CRM</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            velit rem? Esse tempora nostrum optio ipsam nulla? Illum quae illo
-            libero eveniet veritatis facilis debitis sequi voluptas suscipit
-            quod beatae, quis saepe est blanditiis. Eligendi voluptas modi
-            maxime obcaecati ducimus, ab, veritatis quisquam dolor corrupti
-            iusto minima reiciendis amet vitae.
-          </p>
-          <img src="/assets/img/CRM.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="row">
-        <div class="colunm">
-          <h3>4. Salesforce CRM</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            velit rem? Esse tempora nostrum optio ipsam nulla? Illum quae illo
-            libero eveniet veritatis facilis debitis sequi voluptas suscipit
-            quod beatae, quis saepe est blanditiis. Eligendi voluptas modi
-            maxime obcaecati ducimus, ab, veritatis quisquam dolor corrupti
-            iusto minima reiciendis amet vitae.
-          </p>
-          <img src="/assets/img/CRM.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="row">
-        <div class="colunm">
-          <h3>5. Netsuite CRM</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            velit rem? Esse tempora nostrum optio ipsam nulla? Illum quae illo
-            libero eveniet veritatis facilis debitis sequi voluptas suscipit
-            quod beatae, quis saepe est blanditiis. Eligendi voluptas modi
-            maxime obcaecati ducimus, ab, veritatis quisquam dolor corrupti
-            iusto minima reiciendis amet vitae.
-          </p>
-          <img src="/assets/img/CRM.jpg" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="footer-grid">
-        <div class="footer-row">
-          <div class="footer-column">
-            <div class="footer-column1">
-              <h3>Về chúng tôi</h3>
-              <a href="">Giới thiệu chung</a>
-              <a href="">Tuyển dụng</a>
-              <a href="">​Tin tức</a>
-              <a href="">Báo chí</a>
-              <a href="">Sự kiện</a>
-              <a href="">Podcast</a>
-            </div>
-            <div class="footer-column1">
-              <h3>Dịch vụ</h3>
-              <a href="">Viindoo SaaS</a>
-              <a href="">Chợ ứng dụng - Viindoo marketplace</a>
-              <a href="">Tập huấn, chuyển giao công nghệ</a>
-              <a href="">Tư vấn và Triển khai</a>
-              <a href="">Tùy biến tính năng theo yêu cầu</a>
-              <a href="">Nâng cấp Odoo</a>
-            </div>
-            <div class="footer-column1">
-              <h3>Cộng đồng</h3>
-              <a href="">Blogs Quản trị</a>
-              <a href="">Khóa học</a>
-              <a href="">Chương trình Cộng tác viên</a>
-              <a href="">Chương trình Đối tác</a>
-            </div>
-            <div class="footer-column1">
-              <h3>Tài nguyên</h3>
-              <a href="">Github</a>
-              <a href="">Runbot</a>
-              <a href="">​Tài sản thương hiệu</a>
-              <a href="">Chính sách</a>
-            </div>
-            <div class="footer-column1">
-              <h3>Trợ giúp</h3>
-              <a href="">Diễn đàn</a>
-              <a href="">Tài liệu hướng dẫn</a>
-              <a href="">​Trợ giúp</a>
-              <a href="">Đặt lịch hẹn</a>
+    </nav>
+  </div>
+</header>
+<main class="banner">
+  <img src="/assets/img/CRM.jpg" class="d-block w-100" alt="...">
+</main>
+<div class="container mb-2">
+  <h2 class="title mb-4">
+    5 phần mềm CRM giúp quản lý, chăm sóc khách hàng tốt nhất
+  </h2>
+  <h4 class="fw-bold">1. Viindoo CRM</h4>
+  <p class="title1">Viindoo CRM được xây dựng trên nền tảng hệ thống phần mềm khổng lồ của Viindoo,
+    cung cấp giải pháp quản trị khách hàng toàn diện cho doanh nghiệp. Phần mềm nổi bật với khả năng
+    quản lý dữ liệu tập trung trên một nền tảng, tự động tạo và quản lý khách hàng tiềm năng một
+    cách linh hoạt, có thể truy cập mọi lúc, mọi nơi</p>
+  <img src="/assets/img/CRM_1.jpg" class="w-100 mb-5 rounded" height="700">
+</div>
+<div class="container mb-2">
+  <h4 class="fw-bold">2. Insightly CRM</h4>
+  <p class="title1">Insightly CRM là phần mềm CRM dành cho doanh nghiệp nhỏ. Phần mềm có đầy đủ các
+    chức năng thu thập thông tin khách hàng tiềm năng, tự động hóa quy trình làm việc, quản lý khách
+    hàng và thiết lập quy trình bán hàng. Đặc biệt, Insightly CRM có phiên bản dùng miễn phí. Tuy
+    nhiên, phiên bản này giới hạn số lượng người dùng là 2 và không hỗ trợ hệ thống sao lưu dữ
+    liệu. </p>
+  <img src="/assets/img/CRM_2.jpg" class="w-100 mb-5 rounded" height="700">
+  <h4 class="fw-bold">3. Bravo CRM</h4>
+  <p class="title1">Phần mềm CRM của Bravo được thiết kế đặc biệt để hỗ trợ tất cả các bộ phận trong
+    doanh nghiệp. Với giao diện thân thiện và khả năng tùy chỉnh theo từng người dùng, Bravo CRM
+    mang lại sự thuận tiện trong sử dụng. Hệ thống mở linh hoạt, cho phép tùy chỉnh theo đặc thù của
+    từng doanh nghiệp và kết nối với nhiều loại phần mềm, thiết bị khác. Ngoài ra, Bravo CRM cũng
+    cung cấp hệ thống báo cáo đầy đủ để đáp ứng mọi yêu cầu quản trị khách hàng từ lãnh đạo. </p>
+  <img src="/assets/img/CRM_3.jpg" class="w-100 mb-5 rounded" height="700">
+  <h4 class="fw-bold">4. Salesforce CRM </h4>
+  <p class="title1">Phần mềm CRM của Salesforce là một phần mềm quản lý quan hệ khách hàng toàn diện
+    với các tính năng đa dạng trong lĩnh vực marketing, bán hàng, thương mại, và chăm sóc khách
+    hàng. Phần mềm cung cấp các tính năng như email marketing, tiếp thị di động, quảng cáo trên mạng
+    xã hội. Bên cạnh đó, Salesforce CRM cũng hỗ trợ thu thập, theo dõi thông tin khách hàng, tìm
+    kiếm và nuôi dưỡng mối quan hệ khách hàng.</p>
+  <img src="/assets/img/CRM_4.jpg" class="w-100 mb-5 rounded" height="700">
+  <h4 class="fw-bold">5. NetSuite CRM</h4>
+  <p class="title1">Đề xuất cuối cùng cho doanh nghiệp đó là phần mềm quản lý khách hàng NetSuite
+    CRM. Phần mềm có thể tương tác trực tiếp với khách hàng, đối tác và nhà cung cấp trên một nền
+    tảng duy nhất. Với các tính năng như tự động hóa lực lượng bán hàng, quản lý dịch vụ khách hàng,
+    tự động hóa tiếp thị, quản lý báo giá, chiết khấu... NetSuite CRM mang đến một luồng thông tin
+    liền mạch trên toàn bộ vòng đời của khách hàng.</p>
+  <img src="/assets/img/CRM_5.jpg" class="w-100 mb-5 rounded" height="700">
+</div>
+<footer class="bg-black">
+  <div class="container">
+    <div class="row mt-5 ms-5">
+      <div class="col-lg-9 col-12">
+        <div class="row">
+          <div class="col-lg-3 col-12">
+            <div class="position-relative">
+              <div class="mb-3 pb-2 d-flex justify-content-between">
+                <h4 class="overflow-y-hidden text-white">Về chúng tôi</h4>
+              </div>
+              <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none text-reset">Giới thiệu
+                      chung</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Tin tức</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Báo chí</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Sự kiện</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Podcast</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="footer-grid2">
-        <div class="footer-row2">
-          <div class="footer-column2">
-            <h3>Liên hệ</h3>
-            <p>
-              Hotline:
-              <a href="">+84 225 730 9838</a>
-            </p>
-            <p>
-              Email:
-              <a href="">Bonuszone@gmail.com</a>
-            </p>
-            <div class="footer-column2-icon">
-              <a href="">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-square-x-twitter"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-youtube"></i>
-              </a>
-              <a href="">
-                <i class="fa-brands fa-spotify"></i>
-              </a>
-              <a href="">
-                <i class="fa-solid fa-envelope-circle-check"></i>
-              </a>
+          <div class="col-lg-3 col-12">
+            <div>
+              <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+                <h4 class="overflow-y-hidden text-white">Dịch vụ</h4>
+                <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+                   href="#collapseAccounts" role="button" aria-expanded="false"
+                   aria-controls="collapseAccounts">
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+              </div>
+              <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Chợ ứng dụng -
+                      marketplace</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Tập huấn, chuyển giao
+                      công nghệ</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Tư vấn và Triển
+                      khai</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Tùy biến tính năng theo
+                      yêu cầu</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Nâng cấp Odoo</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="footer-column2">
-            <h3>Địa chỉ</h3>
-            <p>Trụ sở chính: Tòa F Trường cao đẳng FPT Polytechnic</p>
-          </div>
-          <div class="footer-column2">
-            <h3>Đăng kí kinh doanh</h3>
-            <p>Mã số Doanh nghiệp: 0201994665</p>
-            <p>Được cấp phép bởi Sở Kế hoạch và Đầu tư Thành Phố Hồ Chí Minh</p>
-          </div>
-        </div>
-      </div>
-    </div>
+          <div class="col-lg-3 col-12">
+            <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+              <h4 class="overflow-y-hidden text-white">Cộng đồng</h4>
+              <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+                 href="#collapseResources" role="button" aria-expanded="false"
+                 aria-controls="collapseResources">
+                <i class="bi bi-chevron-down"></i>
+              </a>
+            </div>
+            <div class="collapse d-lg-block" id="collapseResources" data-bs-parent="#ft-links">
+              <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset">Blogs Quản trị</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset">Khóa học</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset">Chương trình Cộng tác
+                    viên</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset">Chương trình Đối tác</a>
+                </li>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+              <h4 class="overflow-y-hidden text-white">Tài nguyên</h4>
+              <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+                 href="#collapseLocations" role="button" aria-expanded="false"
+                 aria-controls="collapseLocations">
+                <i class="bi bi-chevron-down"></i>
+              </a>
+            </div>
+            <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+              <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset">Github</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset">Runbot</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset">Tài sản thương hiệu</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset">Chính sách</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-12">
+        <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+          <h4 class="overflow-y-hidden text-white">Trợ giúp</h4>
+          <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+             href="#collapseLocations" role="button" aria-expanded="false"
+             aria-controls="collapseLocations">
+            <i class="bi bi-chevron-down"></i>
+          </a>
+        </div>
+        <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+          <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none text-reset">Diễn đàn</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-decoration-none text-reset">Tài liệu hướng dẫn</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none text-reset">Trợ giúp</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-decoration-none text-reset"> Đặt lịch hẹn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5" style="border-top: 1px solid white;">
+    <div class="row mt-5 ms-5">
+      <div class="col-lg-8 col-12">
+        <div class="row" id="ft-links">
+          <div class="col-lg-4 col-12">
+            <div class="position-relative">
+              <div class="mb-3 pb-2 d-flex justify-content-between">
+                <h4 class="overflow-y-hidden text-white">Liên hệ</h4>
+              </div>
+              <div class="collapse d-lg-block" id="collapseLanding" data-bs-parent="#ft-links">
+                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none text-reset">Hotline: <span>+84 0337
+                                                    092 423</span></a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!"
+                       class="text-decoration-none text-reset">Email:kieukienquocvn@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-md-end d-flex align-items-center">
+                <div class="d-flex gap-2">
+                  <a href="#!" class="btn">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#!" class="btn">
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                  <a href="#!" class="btn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="#!" class="btn">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="#!" class="btn">
+                    <i class="bi bi-spotify"></i>
+                  </a>
+                  <a href="#!" class="btn">
+                    <i class="bi bi-threads"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div>
+              <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+                <h4 class="overflow-y-hidden text-white">Địa chỉ</h4>
+                <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+                   href="#collapseAccounts" role="button" aria-expanded="false"
+                   aria-controls="collapseAccounts">
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+              </div>
+              <div class="collapse d-lg-block" id="collapseAccounts" data-bs-parent="#ft-links">
+                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Trường Cao đẳng FPT
+                      Polytechnic</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+          <h4 class="overflow-y-hidden text-white">Đăng ký kinh doanh</h4>
+          <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+             href="#collapseLocations" role="button" aria-expanded="false"
+             aria-controls="collapseLocations">
+            <i class="bi bi-chevron-down"></i>
+          </a>
+        </div>
+        <div class="collapse d-lg-block" id="collapseLocations" data-bs-parent="#ft-links">
+          <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none text-reset">Mã số Doanh nghiệp: 0000000000</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-decoration-none text-reset">Được cấp phép bởi Sở Kế hoạch và
+                Đầu tư Hải Phòng</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="container mt-7">
+    <div class="row align-items-center">
+      <div class="col-md-3 d-flex ms-5">
+        <a class="mb-4 mb-lg-0 d-block text-inverse" href="#"><img
+            src="/assets/img/logo-da-thong-bao-bo-cong-thuong-mau-xanh.png" width="100px"
+            alt=""></a>
+        <a class="mb-4 mb-lg-0 d-block text-inverse ms-2" href="#"><img
+            src="/assets/img/logo-dmca.png"
+            width="100px" alt=""></a>
+      </div>
+      <div class="col-md-8 col-lg-6">
+        <div class="small mb-3 mb-lg-0 text-lg-center">
+          Copyright belongs to web Technology Joint Stock Company
+        </div>
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- AOS JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script src="/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
