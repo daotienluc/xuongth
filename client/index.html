@@ -1,120 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/font/fontawesome-free-6.5.1-web/css/all.css" />
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <title>Trang chủ</title>
-  </head>
-  <body>
-    <a id="signup-link" class="btn-dk" href="./signup.html">Đăng ký</a>
-    <a id="login-link" class="btn-dn" href="./login.html">Đăng Nhập</a>
-
-    <header id="header">
-      <div class="header-nav">
-        <a id="logo">
-          Bonus
-          <p>Zone</p>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/blockchain.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>TRANGCHU</title>
+</head>
+<body>
+<header class="bg-white fixed-top">
+  <div class="container">
+    <div class="row justify-content-end mt-2 mb-2">
+      <div class="col-1">
+        <a class="nav-link btn-dk fs-6" href="./signup.html">Đăng kí</a>
+      </div>
+      <div class="col-1">
+        <a class="nav-link btn-dn fs-6" href="./login.html">Đăng nhập</a>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid header-nav">
+        <a class="mt-2" id="logo">
+          Bonus <p>Zone</p>
         </a>
-        <ul>
-          <li>
-            <a href="">Giới thiệu</a>
-            <a href="">Giới thiệu</a>
-            <a href="">Giới thiệu</a>
-            <a href="">Giới thiệu</a>
-            <a href="">Giới thiệu</a>
-          </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tính năng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dịch vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nhiệm vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Thành viên</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giới thiệu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="banner">
+  <img src="/assets/img/nen.jpg" class="d-block w-100" alt="...">
+  <div class="banner-content mb-4 text-dark">
+    <div class="col-md-5 ">
+      <h1 class="">Ứng dụng hỗ trợ quản lý, phân loại, chấm điểm thành viên trong cộng đồng</h1>
+      <button href="#" class="content-btn"> ĐĂNG KÍ NGAY</button>
+      <p><i class="bi bi-check-lg"></i> Miễn phí trọn đời phần mềm Quản lý Công việc, Dự án </p>
+      <p><i class="bi bi-check-lg"></i> Không giới hạn số người sử dụng </p>
+    </div>
+  </div>
+</main>
+
+<div class="container">
+  <div class="row mt-4 mb-4">
+    <div class="col-6">
+      <img src="/assets/img/CEO.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="col-6">
+      <div class="border-bottom">
+        <h4 class="fw-bold mb-4">Quảng lý công việc khi sinh viên tham gia sự kiện của trường</h4>
+      </div>
+      <div class="container mt-4">
+        <p class="title1"><span class="fw-bold">Quản lý công việc dễ dàng:</span> Nắm bắt tiến độ và
+          kết quả công việc của nhân viên một cách rõ ràng.
+        </p>
+        <p class="title1 mt-4"><span class="fw-bold">Trách nhiệm rõ ràng:</span> Đảm bảo nhân viên
+          chịu
+          trách nhiệm với công việc của mình.
+        </p>
+        <p class="title1 mt-4"><span class="fw-bold">Giám sát thông minh:</span> Theo dõi và nhắc
+          nhở
+          nhân viên một cách hiệu quả mà không tốn nhiều thời gian.</p>
+        <p class="title1 mt-4"><span class="fw-bold">Báo cáo nhanh chóng:</span> Nhận báo cáo công
+          việc
+          từ nhân viên một cách nhanh chóng và chính xác.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="text-center" style="background-color: #1fc8d1;height: 200px;">
+  <h4 class="fw-bold mt-5 mb-4 text-light">Ứng dụng Project</h4>
+  <p class="title1 text-light">Giải pháp quản lý, lập kế hoạch và theo dõi tiến độ công việc, dự án
+    chính xác, kịp thời, tối ưu cho doanh nghiệp
+  </p>
+</div>
+<div class="container mt-2">
+  <div class="text-center">
+    <h4 class="fw-bold mt-5 mb-4">Bám sát tiến độ, kiểm soát quy trình làm việc</h4>
+    <p class="title1 ">Hoạt động linh hoạt giúp thực hiện dự án, công việc dễ dàng hơn.  </p>
+  </div>
+  <div class=" row">
+    <div class="col-6">
+      <h4 class="fw-bold mt-5 mb-4">Theo dõi và bám sát tiến độ công việc </h4>
+      <p class="title1 ">Lập kế hoạch và quản lý công việc theo thứ tự ưu tiên. </p>
+      <p class="title1 ">Kiểm soát tiến độ công việc của từng nhân viên: nhiệm vụ, thời gian thực
+        hiện,ngày đến hạn, quá hạn, v.v.</p>
+      <p class="title1 ">Theo dõi thời gian làm việc có ích thay vì thời gian có mặt của nhân viên
+        nhờ tích hợp chấm công ngay trên nhiệm vụ.</p>
+    </div>
+    <div class="col-6">
+      <h4 class="fw-bold mt-5 mb-4">Chuẩn hóa quy trình làm việc</h4>
+      <p class="title1 ">  Tùy chỉnh & kéo thả để chuyển giai đoạn các nhiệm vụ trên giao diện
+        Kanban.</p>
+      <p class="title1 ">Thiết lập quy trình quản lý công việc khoa học. Phối hợp nhịp nhàng giữa
+        các phòng ban, phát hiện ngay điểm "nghẽn" để xử lý.</p>
+      <p class="title1 ">Tự động gửi email cập nhật thông tin khi thay đổi giai đoạn của nhiệm
+        vụ.</p>
+    </div>
+  </div>
+</div>
+<div class="mt-2 bg-body-secondary">
+  <div class="container">
+    <div class="text-center">
+      <h4 class="fw-bold mt-5 mb-4">Giao diện người dùng hiện đại</h4>
+      <p class="title1 ">Theo dõi tiến độ công việc dưới nhiều góc nhìn bằng các biểu đồ trực quan
+        hóa dữ liệu</p>
+    </div>
+    <div class=" row">
+      <div class="col-7">
+        <img src="/assets/img/introdouce5.jpg" class="w-100 mt-4 mb-5 rounded" height="500">
+      </div>
+      <div class="col-5" style="margin-top: 200px">
+        <ul class="title1" style="margin-left: 100px">
+          <li class="mt-1">Lịch biểu</li>
+          <li class="mt-2">Bảng xếp hạng</li>
+          <li class="mt-2">Thời gian sự kiện</li>
+          <li class="mt-2">Sơ đồ Trello</li>
         </ul>
       </div>
-    </header>
-    <div id="content">
-      <img class="content-img" src="./../assets/img/nen.jpg" alt="" />
-      <div class="content-introduce">
-        <h1>
-          Ứng dụng hỗ trợ quản lí, phân loại chấm điểm thành viên trong cộng
-          đồng
-        </h1>
-        <button href="#" class="content-btn">ĐĂNG KÍ NGAY</button>
-        <p>
-          <i class="fa-solid fa-check"></i>
-          Miễn phí trọn đời phần mềm Quản lý Công việc, Dự án
-        </p>
-        <p>
-          <i class="fa-solid fa-check"></i>
-          Không giới hạn số người sử dụng
-        </p>
+    </div>
+    <div class="text-center mb-5">
+      <button class="content-btn w-25"> ĐĂNG KÍ NGAY</button>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="text-center">
+    <h4 class="fw-bold mt-5 mb-4">Làm việc cộng tác, thông tin minh bạch</h4>
+    <p class="title1 ">Phân chia công việc và phối hợp thực hiện giữa các phòng ban trên cùng một
+      giao diện phần mềm.</p>
+  </div>
+  <div class=" row">
+    <div class="col-6" style="margin-top: 150px">
+      <p class="title1 ">Gửi tin nhắn, đính kèm tài liệu, hình ảnh, ghi chú và thêm người
+        theo dõi ngay trong nhiệm vụ.</p>
+      <p class="title1 ">Ghi nhận lịch sử làm việc và thông tin trao đổi, cộng tác giữa
+        các phòng ban.</p>
+      <p class="title1 ">Gửi email, cộng tác với khách hàng ngay trên giao diện nhiệm
+        vụ mà vẫn đảm bảo tính bảo mật.</p>
+      <p class="title1 ">Tạo hành động tự động để nhắc nhở thực hiện, tránh bỏ sót
+        hay quên nhiệm vụ.</p>
+      <p class="title1 ">Làm việc trực tuyến trên mọi thiết bị.</p>
+    </div>
+    <div class="col-6">
+      <img src="/assets/img/introdouce6.jpg" class="w-100 mt-4 mb-5 rounded" height="500">
+
+    </div>
+  </div>
+</div>
+<div class="mt-2 bg-body-secondary">
+  <div class="container">
+    <div class="text-center">
+      <h4 class="fw-bold mt-5 mb-4">Dự báo nhu cầu và người tham gia</h4>
+    </div>
+    <div class=" row">
+      <div class="col-6">
+        <img src="/assets/img/introdouce7.jpg" class="w-100 mt-4 mb-5 rounded" height="500">
       </div>
-      <div class="content-introduce2">
-        <img
-          src="./../assets/img/CEO.jpg"
-          alt=""
-          class="content-introduce2-img"
-        />
-        <div class="content-introduce2-list">
-          <h1>Là CEO - Bạn có đang Quản lý Công việc một cách "nhẹ nhàng"?</h1>
-          <div class="content-introduce2-item">
-            <div class="content-introduce2-item1">
-              <i class="fa-solid fa-circle-question"></i>
-              <p>
-                Bạn có nắm được tiến độ công việc của nhân viên? Ai đang phụ
-                trách? Kết quả thế nào? Có vướng mắc?
-              </p>
-            </div>
-            <div class="content-introduce2-item2">
-              <i class="fa-solid fa-circle-question"></i>
-              <p>
-                Bạn có mất thời gian theo sát và nhắc nhở nhân viên làm việc?
-              </p>
-            </div>
-            <div class="content-introduce2-item3">
-              <i class="fa-solid fa-circle-question"></i>
-              <p>Nhân viên có đùn đẩy trách nhiệm khi không đạt kết quả tốt?</p>
-            </div>
-            <div class="content-introduce2-item4">
-              <i class="fa-solid fa-circle-question"></i>
-              <p>
-                Bạn có phải chờ đợi "mòn mỏi" khi yêu cầu nhân viên báo cáo công
-                việc?
-              </p>
-            </div>
+      <div class="col-6" style="margin-top: 200px">
+        <p class="title1 ">Phân bổ nguồn lực, giao việc theo người thực hiện hoặc theo
+          sự kiện.</p>
+        <p class="title1 ">Lập dự báo thời gian và deadline cho từng dự án.</p>
+        <p class="title1 ">Tiến trình của dự án được cập nhật đầy đủ trên bảng theo dõi</p>
+        <p class="title1 ">So sánh thời gian dự kiến và thời gian thực tế </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="text-center">
+    <h4 class="fw-bold mt-5 mb-4">Báo cáo tổng quan và theo giỏi của Giải pháp quản lý dự án </h4>
+    <p class="title1 ">Trực quan hóa dữ liệu, giảm tải khối lượng công việc của nhà quản lý và nhân
+      sự</p>
+  </div>
+  <div class=" row">
+    <div class="col-5" style="margin-top: 150px">
+      <p class="title1 ">Biến các số liệu đo lường khô khan thành biểu đồ, bảng biểu rõ
+        ràng, trực quan, sinh động, cập nhật dữ liệu theo thời gian
+        thực.</p>
+      <p class="title1 ">Xem báo cáo theo nhiều tiêu chí lọc nhóm: nhân viên, trạng
+        thái, thời gian thực hiện, deadline,...</p>
+      <p class="title1 ">Phân tích báo cáo từ tổng quan đến chi tiết:</p>
+      <p class="title1 ">Báo cáo tổng quan dự án: tổng thời gian làm việc của nhân
+        viên, ghi nhận khả năng sinh lời của dự án</p>
+      <p class="title1 ">Báo cáo Chi phí và Doanh thu dự án chi tiết</p>
+      <p class="title1 ">Báo cáo phân tích nhiệm vụ với giao diện Gantt</p>
+    </div>
+    <div class="col-7">
+      <img src="/assets/img/introdouce8.jpg" class="w-100 mt-4 mb-5 rounded" height="500">
+
+    </div>
+  </div>
+</div>
+<div class="bg-body-secondary">
+  <div class="container">
+    <div class="text-center">
+      <h4 class="fw-bold mt-5 mb-5">Tích hợp đầy đủ với các Ứng dụng khác</h4>
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Event</h4>
+          </div>
+          <div class="card-body">
+            <p class="title1 ">Quản lý báo giá, đơn bán, hóa
+              đơn, tồn kho và thanh toán khách hàng.</p>
+            <h4 class="fw-bold">Khám phá </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">CRM</h4>
+          </div>
+          <div class="card-body">
+            <p class="title1 ">Theo dấu tất cả phản hồi của
+              KH, thực thi quy trình bán từ
+              Nguồn dẫn và Cơ hội.</p>
+            <h4 class="fw-bold">Khám phá </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Điểm thưởng</h4>
+          </div>
+          <div class="card-body">
+            <p class="title1 ">Ghi nhận và quản lý thời gian
+              làm việc, tự động tính toán
+              chi phí dự án.</p>
+            <h4 class="fw-bold">Khám phá </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Quản lý ví</h4>
+          </div>
+          <div class="card-body">
+            <p class="title1 ">Quản lý báo giá, đơn bán, hóa
+              đơn, tồn kho và thanh toán khách hàng.</p>
+            <h4 class="fw-bold">Khám phá </h4>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="content-introduce3">
-        <h1>Ứng dụng BonusZone Project</h1>
-        <p>
-          Giải pháp quản lý, lập kế hoạch và theo dõi tiến độ công việc, dự án
-          chính xác, kịp thời, tối ưu cho doanh nghiệp
-        </p>
+  </div>
+  <div style="margin-left: 1100px">
+    <div class="row">
+      <div class="col-3">
+        <p class="title1 ">Tìm hiểu</p>
       </div>
-      <div class="container-introduce4">
-        <h2>Bám sát tiến độ, kiểm soát quy trình làm việc</h2>
-        <p>Hoạt động linh hoạt giúp thực hiện dự án, công việc dễ dàng hơn.</p>
-        <div class="container-introduce4_list">
-          <h6>Theo dõi và bám sát tiến độ công việc</h6>
-          <span>
-            <i class="fa-solid fa-caret-down"></i>
-            Lập kế hoạch và quản lý công việc theo thứ tự ưu tiên.
-          </span>
-          <span>
-            <i class="fa-solid fa-caret-down"></i>
-            Kiểm soát tiến độ công việc của từng nhân viên: nhiệm vụ, thời gian
-            thực hiện,ngày đến hạn, quá hạn, v.v.
-          </span>
-          <span>
-            <i class="fa-solid fa-caret-down"></i>
-            Theo dõi thời gian làm việc có ích thay vì thời gian có mặt của nhân
-            viên nhờ tích hợp chấm công ngay trên nhiệm vụ.
-          </span>
+      <div class="col-7">
+        <p class="title1 fw-bold" style="color: #6d366d">Giải pháp quản trị tổng thể </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center" style="background-color: #1fc8d1;height: 200px;">
+  <p class="title1 text-light mt-5">Theo dõi và bám sát tiến độ công việc với web</p>
+  <div class="text-center mb-5">
+    <button class="content-btn w-25"> ĐĂNG KÍ NGAY</button>
+  </div>
+</div>
+
+<footer class="bg-black">
+  <div class="container">
+    <div class="row mt-5 ms-5">
+      <div class="col-lg-9 col-12">
+        <div class="row">
+          <div class="col-lg-3 col-12">
+            <div class="position-relative">
+              <div class="mb-3 pb-2 d-flex justify-content-between">
+                <h4 class="overflow-y-hidden text-white">Về chúng tôi</h4>
+              </div>
+              <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none text-reset">Giới thiệu
+                      chung</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Tin tức</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Báo chí</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Sự kiện</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Podcast</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div>
+              <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+                <h4 class="overflow-y-hidden text-white">Dịch vụ</h4>
+                <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+                   href="#collapseAccounts" role="button" aria-expanded="false"
+                   aria-controls="collapseAccounts">
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+              </div>
+              <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Chợ ứng dụng -
+                      marketplace</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Tập huấn, chuyển giao
+                      công nghệ</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Tư vấn và Triển
+                      khai</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Tùy biến tính năng theo
+                      yêu cầu</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Nâng cấp Odoo</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+              <h4 class="overflow-y-hidden text-white">Cộng đồng</h4>
+              <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+                 href="#collapseResources" role="button" aria-expanded="false"
+                 aria-controls="collapseResources">
+                <i class="bi bi-chevron-down"></i>
+              </a>
+            </div>
+            <div class="collapse d-lg-block" id="collapseResources" data-bs-parent="#ft-links">
+              <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset">Blogs Quản trị</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset">Khóa học</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset">Chương trình Cộng tác
+                    viên</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset">Chương trình Đối tác</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+              <h4 class="overflow-y-hidden text-white">Tài nguyên</h4>
+              <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+                 href="#collapseLocations" role="button" aria-expanded="false"
+                 aria-controls="collapseLocations">
+                <i class="bi bi-chevron-down"></i>
+              </a>
+            </div>
+            <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+              <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset">Github</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset">Runbot</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-reset">Tài sản thương hiệu</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#!" class="text-decoration-none text-reset">Chính sách</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-12">
+        <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+          <h4 class="overflow-y-hidden text-white">Trợ giúp</h4>
+          <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+             href="#collapseLocations" role="button" aria-expanded="false"
+             aria-controls="collapseLocations">
+            <i class="bi bi-chevron-down"></i>
+          </a>
+        </div>
+        <div class="collapse d-lg-block" data-bs-parent="#ft-links">
+          <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none text-reset">Diễn đàn</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-decoration-none text-reset">Tài liệu hướng dẫn</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none text-reset">Trợ giúp</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-decoration-none text-reset"> Đặt lịch hẹn</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div id="footer"></div>
-    <!-- AOS JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script src="/client/index.js"></script>
-  </body>
+  </div>
+  <div class="container mt-5" style="border-top: 1px solid white;">
+    <div class="row mt-5 ms-5">
+      <div class="col-lg-8 col-12">
+        <div class="row" id="ft-links">
+          <div class="col-lg-4 col-12">
+            <div class="position-relative">
+              <div class="mb-3 pb-2 d-flex justify-content-between">
+                <h4 class="overflow-y-hidden text-white">Liên hệ</h4>
+              </div>
+              <div class="collapse d-lg-block" id="collapseLanding" data-bs-parent="#ft-links">
+                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                  <li class="mb-2">
+                    <a href="#" class="text-decoration-none text-reset">Hotline: <span>+84 0337
+                                                    092 423</span></a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#!"
+                       class="text-decoration-none text-reset">Email:kieukienquocvn@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-md-end d-flex align-items-center">
+                <div class="d-flex gap-2">
+                  <a href="#!" class="btn">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#!" class="btn">
+                    <i class="bi bi-twitter-x"></i>
+                  </a>
+                  <a href="#!" class="btn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="#!" class="btn">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="#!" class="btn">
+                    <i class="bi bi-spotify"></i>
+                  </a>
+                  <a href="#!" class="btn">
+                    <i class="bi bi-threads"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-12">
+            <div>
+              <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+                <h4 class="overflow-y-hidden text-white">Địa chỉ</h4>
+                <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+                   href="#collapseAccounts" role="button" aria-expanded="false"
+                   aria-controls="collapseAccounts">
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+              </div>
+              <div class="collapse d-lg-block" id="collapseAccounts" data-bs-parent="#ft-links">
+                <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+                  <li class="mb-2">
+                    <a href="#!" class="text-decoration-none text-reset">Trường Cao đẳng FPT
+                      Polytechnic</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="mb-3 pb-2 d-flex justify-content-between position-relative">
+          <h4 class="overflow-y-hidden text-white">Đăng ký kinh doanh</h4>
+          <a class="d-block d-lg-none stretched-link text-body" data-bs-toggle="collapse"
+             href="#collapseLocations" role="button" aria-expanded="false"
+             aria-controls="collapseLocations">
+            <i class="bi bi-chevron-down"></i>
+          </a>
+        </div>
+        <div class="collapse d-lg-block" id="collapseLocations" data-bs-parent="#ft-links">
+          <ul class="list-unstyled mb-0 py-3 py-lg-0 text-white">
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none text-reset">Mã số Doanh nghiệp: 0000000000</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-decoration-none text-reset">Được cấp phép bởi Sở Kế hoạch và
+                Đầu tư Hải Phòng</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="container mt-7">
+    <div class="row align-items-center">
+      <div class="col-md-3 d-flex ms-5">
+        <a class="mb-4 mb-lg-0 d-block text-inverse" href="#"><img
+            src="/assets/img/logo-da-thong-bao-bo-cong-thuong-mau-xanh.png" width="100px"
+            alt=""></a>
+        <a class="mb-4 mb-lg-0 d-block text-inverse ms-2" href="#"><img
+            src="/assets/img/logo-dmca.png"
+            width="100px" alt=""></a>
+      </div>
+      <div class="col-md-8 col-lg-6">
+        <div class="small mb-3 mb-lg-0 text-lg-center">
+          Copyright belongs to web Technology Joint Stock Company
+        </div>
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- AOS JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script src="/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

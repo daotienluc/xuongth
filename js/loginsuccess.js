@@ -23,3 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Đã xảy ra lỗi khi gửi yêu cầu:", error));
 });
+
+// Xử lý đăng xuất, xóa thông tin người dùng khỏi localStorage
+document.getElementById("logout").addEventListener("click", function () {
+  localStorage.removeItem("username");
+  localStorage.removeItem("accessToken");
+  window.location.href = "./login.html";
+});
+
+// xử lí chuyển trang
+const handleLogOut = () => {
+  window.location.href = "/index.html";
+};
+document.getElementById("logout").addEventListener("click", handleLogOut);

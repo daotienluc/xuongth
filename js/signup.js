@@ -3,21 +3,23 @@ document
   .addEventListener("click", async function (e) {
     e.preventDefault();
 
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
-    let confirmPassword = document.getElementById("confirm-password").value;
-
-    if (password !== confirmPassword) {
-      alert("Mật khẩu không khớp!");
-      return;
-    }
-
+    // Kiểm tra ví đã kết nối chưa
     let isWalletConnected =
       localStorage.getItem("isWalletConnected") === "true";
-    let walletAddress = localStorage.getItem("walletAddress") || "";
+    console.log("isWalletConnected:", isWalletConnected);
 
     if (!isWalletConnected) {
       alert("Vui lòng kết nối ví Phantom trước khi đăng ký.");
+      return;
+    }
+
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirm-password").value;
+    let walletAddress = localStorage.getItem("walletAddress") || "";
+
+    if (password !== confirmPassword) {
+      alert("Mật khẩu không khớp!");
       return;
     }
 
@@ -35,7 +37,9 @@ document
       const result = await response.json();
       if (result.success) {
         alert("Đăng ký thành công!");
-        window.location.href = "./login.html";
+        localStorage.removeItem("isWalletConnected");
+        localStorage.removeItem("walletAddress");
+        window.location.href = "/login.html";
       } else {
         alert(`Đăng ký thất bại: ${result.message}`);
       }
@@ -66,3 +70,22 @@ async function connectWallet() {
 document
   .getElementById("connectWalletButton")
   .addEventListener("click", connectWallet);
+
+const handleLogIn = () => {
+  window.location.href = "/login.html";
+};
+document.getElementById("login-link").addEventListener("click", handleLogIn);
+
+const logo = document.getElementById("logo");
+
+if (logo) {
+  logo.addEventListener("click", function () {
+    window.location.href = "/index.html";
+  });
+}
+
+// Xóa localStorage khi trang được tải lại để đảm bảo không có giá trị cũ
+window.onload = function () {
+  localStorage.removeItem("isWalletConnected");
+  localStorage.removeItem("walletAddress");
+};
